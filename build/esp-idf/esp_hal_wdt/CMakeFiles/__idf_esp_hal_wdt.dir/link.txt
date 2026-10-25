@@ -1,0 +1,2 @@
+xtensa-esp32-elf-gcc-ar qc libesp_hal_wdt.a CMakeFiles/__idf_esp_hal_wdt.dir/esp32/mwdt_periph.c.obj CMakeFiles/__idf_esp_hal_wdt.dir/wdt_hal_iram.c.obj
+xtensa-esp32-elf-gcc-ranlib libesp_hal_wdt.a

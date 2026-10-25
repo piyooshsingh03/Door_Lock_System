@@ -1,0 +1,524 @@
+
+#include <stdbool.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <string.h>
+
+#include "app.h"
+#include "wifi_manager.h"
+
+#include "cJSON.h"
+#include "driver/gpio.h"
+#include "esp_err.h"
+#include "esp_http_server.h"
+#include "esp_log.h"
+#include "esp_random.h"
+#include "psa/crypto.h"
+#include "nvs.h"
+
+#define LED_GPIO           GPIO_NUM_2
+#define MAX_DEVICES        8
+#define DEVICE_NAME_LEN    24
+#define TOKEN_LEN          32
+#define TOKEN_HASH_LEN     32
+#define AUTH_DB_MAGIC      0x44524C31
+
+/*
+ * DEMO ONLY: Change this PIN before testing.
+ * A PIN embedded in firmware is not suitable for
+ * protecting a real door lock.
+ */
+#define ADMIN_PIN "842617"
+
+static const char *TAG = "DOOR_APP";
+
+typedef struct {
+    uint8_t used;
+    char name[DEVICE_NAME_LEN];
+    uint8_t token_hash[TOKEN_HASH_LEN];
+} authorized_device_t;
+
+typedef struct {
+    uint32_t magic;
+    authorized_device_t devices[MAX_DEVICES];
+} authorized_db_t;
+
+static authorized_db_t s_db;
+static bool s_gpio_state = false;
+static httpd_handle_t s_server = NULL;
+
+/* Save the complete registration database to NVS. */
+static esp_err_t save_database(const authorized_db_t *db)
+{
+    nvs_handle_t handle;
+    esp_err_t err = nvs_open("door_auth", NVS_READWRITE, &handle);
+
+    if (err != ESP_OK) {
+        return err;
+    }
+
+    err = nvs_set_blob(handle, "auth_db", db, sizeof(*db));
+
+    if (err == ESP_OK) {
+        err = nvs_commit(handle);
+    }
+
+    nvs_close(handle);
+    return err;
+}
+
+/* Load existing registrations, or create an empty database. */
+static esp_err_t init_database(void)
+{
+    nvs_handle_t handle;
+    esp_err_t err = nvs_open("door_auth", NVS_READWRITE, &handle);
+
+    if (err != ESP_OK) {
+        return err;
+    }
+
+    size_t size = sizeof(s_db);
+    err = nvs_get_blob(handle, "auth_db", &s_db, &size);
+
+    bool reset_db =
+        err == ESP_ERR_NVS_NOT_FOUND ||
+        err == ESP_ERR_NVS_INVALID_LENGTH ||
+        (err == ESP_OK &&
+         (size != sizeof(s_db) || s_db.magic != AUTH_DB_MAGIC));
+
+    if (reset_db) {
+        memset(&s_db, 0, sizeof(s_db));
+        s_db.magic = AUTH_DB_MAGIC;
+
+        err = nvs_set_blob(handle, "auth_db", &s_db, sizeof(s_db));
+
+        if (err == ESP_OK) {
+            err = nvs_commit(handle);
+        }
+    }
+
+    nvs_close(handle);
+
+    if (err == ESP_OK) {
+        ESP_LOGI(TAG, "Authorization database ready");
+    }
+
+    return err;
+}
+
+/* Generate a random 128-bit token represented by 32 hex characters. */
+static void generate_token(char token[TOKEN_LEN + 1])
+{
+    static const char hex[] = "0123456789abcdef";
+    uint8_t random_bytes[TOKEN_LEN / 2];
+
+    esp_fill_random(random_bytes, sizeof(random_bytes));
+
+    for (size_t i = 0; i < sizeof(random_bytes); i++) {
+        token[i * 2]     = hex[random_bytes[i] >> 4];
+        token[i * 2 + 1] = hex[random_bytes[i] & 0x0F];
+    }
+
+    token[TOKEN_LEN] = '\0';
+}
+
+/* Store only a SHA-256 hash of each device token. */
+static esp_err_t hash_token(
+    const char *token,
+    uint8_t output[TOKEN_HASH_LEN])
+{
+    return mbedtls_sha256(
+        (const unsigned char *)token,
+        strlen(token),
+        output,
+        0);
+}
+
+/* Authenticate a browser using its X-Device-Token header. */
+static bool is_authorized(httpd_req_t *req)
+{
+    char token[TOKEN_LEN + 1] = {0};
+
+    size_t header_len =
+        httpd_req_get_hdr_value_len(req, "X-Device-Token");
+
+    if (header_len != TOKEN_LEN ||
+        httpd_req_get_hdr_value_str(
+            req, "X-Device-Token", token, sizeof(token)) != ESP_OK) {
+        return false;
+    }
+
+    uint8_t supplied_hash[TOKEN_HASH_LEN];
+
+    if (hash_token(token, supplied_hash) != 0) {
+        return false;
+    }
+
+    for (size_t i = 0; i < MAX_DEVICES; i++) {
+        if (s_db.devices[i].used &&
+            memcmp(supplied_hash,
+                   s_db.devices[i].token_hash,
+                   TOKEN_HASH_LEN) == 0) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+/* Main control webpage. */
+static const char *web_page =
+    "<!DOCTYPE html><html><head>"
+    "<meta name='viewport' content='width=device-width,initial-scale=1'>"
+    "<title>ESP32 Door Lock</title></head>"
+    "<body style='font-family:Arial;text-align:center'>"
+    "<h2>ESP32 Door Lock</h2>"
+    "<p>GPIO2 demonstration</p>"
+    "<button onclick=\"control('1')\">UNLOCK / ON</button><br><br>"
+    "<button onclick=\"control('0')\">LOCK / OFF</button>"
+    "<p id='status'>Ready</p>"
+    "<a href='/register'>Register this phone</a>"
+    "<script>"
+    "async function control(state){"
+    " const token=localStorage.getItem('door_token')||'';"
+    " try{"
+    "  const r=await fetch('/gpio?state='+state,{"
+    "   headers:{'X-Device-Token':token}});"
+    "  document.getElementById('status').innerText="
+    "   r.status===401?'Unauthorized. Register this phone first.':"
+    "   await r.text();"
+    " }catch(e){"
+    "  document.getElementById('status').innerText='Request failed';"
+    " }"
+    "}"
+    "</script></body></html>";
+
+/* Registration webpage. */
+static const char *registration_page =
+    "<!DOCTYPE html><html><head>"
+    "<meta name='viewport' content='width=device-width,initial-scale=1'>"
+    "<title>Register Phone</title></head>"
+    "<body style='font-family:Arial;max-width:420px;margin:40px auto'>"
+    "<h2>Register authorized phone</h2>"
+    "<p>Enter the administrator PIN to register this browser.</p>"
+    "<form id='form'>"
+    "<label>Administrator PIN</label><br>"
+    "<input id='pin' type='password' required><br><br>"
+    "<label>Device name</label><br>"
+    "<input id='name' maxlength='23' required "
+    "placeholder='My Phone'><br><br>"
+    "<button type='submit'>Register phone</button>"
+    "</form><p id='status'></p><a href='/'>Back</a>"
+    "<script>"
+    "document.getElementById('form').onsubmit=async function(e){"
+    " e.preventDefault();"
+    " const status=document.getElementById('status');"
+    " status.innerText='Registering...';"
+    " try{"
+    "  const r=await fetch('/register-device',{"
+    "   method:'POST',"
+    "   headers:{'Content-Type':'application/json'},"
+    "   body:JSON.stringify({"
+    "    pin:document.getElementById('pin').value,"
+    "    name:document.getElementById('name').value})"
+    "  });"
+    "  const data=await r.json();"
+    "  if(!r.ok){status.innerText=data.error||'Registration failed';return;}"
+    "  localStorage.setItem('door_token',data.token);"
+    "  status.innerText='Registered successfully. Returning...';"
+    "  window.location.href='/';"
+    " }catch(err){status.innerText='Request failed';}"
+    "};"
+    "</script></body></html>";
+
+static esp_err_t root_handler(httpd_req_t *req)
+{
+    httpd_resp_set_type(req, "text/html");
+    return httpd_resp_send(req, web_page, HTTPD_RESP_USE_STRLEN);
+}
+
+static esp_err_t registration_page_handler(httpd_req_t *req)
+{
+    httpd_resp_set_type(req, "text/html");
+    return httpd_resp_send(
+        req, registration_page, HTTPD_RESP_USE_STRLEN);
+}
+
+/* Return a small JSON error response. */
+static esp_err_t send_json_error(
+    httpd_req_t *req, const char *status, const char *message)
+{
+    httpd_resp_set_status(req, status);
+    httpd_resp_set_type(req, "application/json");
+
+    cJSON *json = cJSON_CreateObject();
+
+    if (json == NULL) {
+        return httpd_resp_send_err(
+            req, HTTPD_500_INTERNAL_SERVER_ERROR, "Out of memory");
+    }
+
+    cJSON_AddStringToObject(json, "error", message);
+    char *body = cJSON_PrintUnformatted(json);
+
+    cJSON_Delete(json);
+
+    if (body == NULL) {
+        return httpd_resp_send_err(
+            req, HTTPD_500_INTERNAL_SERVER_ERROR, "Out of memory");
+    }
+
+    esp_err_t err = httpd_resp_send(req, body, HTTPD_RESP_USE_STRLEN);
+    cJSON_free(body);
+    return err;
+}
+
+/* Register a browser after validating the administrator PIN. */
+static esp_err_t register_device_handler(httpd_req_t *req)
+{
+    if (req->content_len <= 0 || req->content_len > 512) {
+        return send_json_error(
+            req, "400 Bad Request", "Invalid request size");
+    }
+
+    char body[513] = {0};
+    int received = 0;
+
+    while (received < req->content_len) {
+        int n = httpd_req_recv(
+            req, body + received, req->content_len - received);
+
+        if (n <= 0) {
+            return ESP_FAIL;
+        }
+
+        received += n;
+    }
+
+    cJSON *json = cJSON_Parse(body);
+
+    if (json == NULL) {
+        return send_json_error(
+            req, "400 Bad Request", "Invalid JSON");
+    }
+
+    const cJSON *pin_item = cJSON_GetObjectItemCaseSensitive(json, "pin");
+    const cJSON *name_item = cJSON_GetObjectItemCaseSensitive(json, "name");
+
+    if (!cJSON_IsString(pin_item) ||
+        !cJSON_IsString(name_item) ||
+        pin_item->valuestring == NULL ||
+        name_item->valuestring == NULL ||
+        strcmp(pin_item->valuestring, ADMIN_PIN) != 0) {
+        cJSON_Delete(json);
+        return send_json_error(
+            req, "403 Forbidden", "Invalid administrator PIN");
+    }
+
+    const char *name = name_item->valuestring;
+    size_t name_len = strlen(name);
+
+    if (name_len == 0 || name_len >= DEVICE_NAME_LEN) {
+        cJSON_Delete(json);
+        return send_json_error(
+            req, "400 Bad Request", "Name must be 1-23 characters");
+    }
+
+    size_t slot = MAX_DEVICES;
+
+    for (size_t i = 0; i < MAX_DEVICES; i++) {
+        if (!s_db.devices[i].used) {
+            slot = i;
+            break;
+        }
+    }
+
+    if (slot == MAX_DEVICES) {
+        cJSON_Delete(json);
+        return send_json_error(
+            req, "409 Conflict", "Registration limit reached");
+    }
+
+    char token[TOKEN_LEN + 1];
+    uint8_t token_hash[TOKEN_HASH_LEN];
+
+    generate_token(token);
+
+    if (hash_token(token, token_hash) != 0) {
+        cJSON_Delete(json);
+        return send_json_error(
+            req, "500 Internal Server Error", "Token generation failed");
+    }
+
+    authorized_db_t updated = s_db;
+    updated.devices[slot].used = 1;
+    snprintf(updated.devices[slot].name,
+             sizeof(updated.devices[slot].name), "%s", name);
+    memcpy(updated.devices[slot].token_hash,
+           token_hash, sizeof(token_hash));
+
+    esp_err_t err = save_database(&updated);
+
+    if (err != ESP_OK) {
+        cJSON_Delete(json);
+        ESP_LOGE(TAG, "Failed to save registration: %s",
+                 esp_err_to_name(err));
+        return send_json_error(
+            req, "500 Internal Server Error", "Could not save registration");
+    }
+
+    s_db = updated;
+    cJSON_Delete(json);
+
+    /* The full token is returned once to the registering browser. */
+    cJSON *response = cJSON_CreateObject();
+
+    if (response == NULL) {
+        return httpd_resp_send_err(
+            req, HTTPD_500_INTERNAL_SERVER_ERROR, "Out of memory");
+    }
+
+    cJSON_AddStringToObject(response, "token", token);
+    char *response_body = cJSON_PrintUnformatted(response);
+    cJSON_Delete(response);
+
+    if (response_body == NULL) {
+        return httpd_resp_send_err(
+            req, HTTPD_500_INTERNAL_SERVER_ERROR, "Out of memory");
+    }
+
+    httpd_resp_set_type(req, "application/json");
+    err = httpd_resp_send(req, response_body, HTTPD_RESP_USE_STRLEN);
+    cJSON_free(response_body);
+
+    if (err == ESP_OK) {
+        ESP_LOGI(TAG, "A browser was registered successfully");
+    }
+
+    return err;
+}
+
+/* Authenticate every GPIO-changing request. */
+static esp_err_t gpio_handler(httpd_req_t *req)
+{
+
+    if (!is_authorized(req)) {
+        return httpd_resp_send_err(
+            req, HTTPD_401_UNAUTHORIZED, "Unauthorized device");
+    }
+
+    char query[32] = {0};
+    char state[8] = {0};
+
+    if (httpd_req_get_url_query_str(
+            req, query, sizeof(query)) != ESP_OK ||
+        httpd_query_key_value(
+            query, "state", state, sizeof(state)) != ESP_OK) {
+        return httpd_resp_send_err(
+            req, HTTPD_400_BAD_REQUEST, "Missing state parameter");
+    }
+
+    if (strcmp(state, "1") == 0) {
+        s_gpio_state = true;
+    } else if (strcmp(state, "0") == 0) {
+        s_gpio_state = false;
+    } else {
+        return httpd_resp_send_err(
+            req, HTTPD_400_BAD_REQUEST, "Use state=1 or state=0");
+    }
+
+    gpio_set_level(LED_GPIO, s_gpio_state ? 1 : 0);
+
+    ESP_LOGI(TAG, "Authorized GPIO request: %d",
+             s_gpio_state ? 1 : 0);
+
+    httpd_resp_set_type(req, "text/plain");
+
+    return httpd_resp_send(
+        req,
+        s_gpio_state ? "GPIO ON" : "GPIO OFF",
+        HTTPD_RESP_USE_STRLEN);
+}
+
+static esp_err_t start_webserver(void)
+{
+    httpd_config_t config = HTTPD_DEFAULT_CONFIG();
+
+    esp_err_t err = httpd_start(&s_server, &config);
+
+    if (err != ESP_OK) {
+        return err;
+    }
+
+    const httpd_uri_t routes[] = {
+        {
+            .uri = "/",
+            .method = HTTP_GET,
+            .handler = root_handler,
+            .user_ctx = NULL
+        },
+        {
+            .uri = "/register",
+            .method = HTTP_GET,
+            .handler = registration_page_handler,
+            .user_ctx = NULL
+        },
+        {
+            .uri = "/register-device",
+            .method = HTTP_POST,
+            .handler = register_device_handler,
+            .user_ctx = NULL
+        },
+        {
+            .uri = "/gpio",
+            .method = HTTP_GET,
+            .handler = gpio_handler,
+            .user_ctx = NULL
+        }
+    };
+
+    for (size_t i = 0; i < sizeof(routes) / sizeof(routes[0]); i++) {
+        err = httpd_register_uri_handler(s_server, &routes[i]);
+
+        if (err != ESP_OK) {
+            httpd_stop(s_server);
+            s_server = NULL;
+            return err;
+        }
+    }
+
+    ESP_LOGI(TAG, "HTTP server started on port 80");
+    return ESP_OK;
+}
+
+static esp_err_t gpio_init(void)
+{
+    gpio_config_t config = {
+        .pin_bit_mask = 1ULL << LED_GPIO,
+        .mode = GPIO_MODE_OUTPUT,
+        .pull_up_en = GPIO_PULLUP_DISABLE,
+        .pull_down_en = GPIO_PULLDOWN_DISABLE,
+        .intr_type = GPIO_INTR_DISABLE
+    };
+
+    esp_err_t err = gpio_config(&config);
+
+    if (err == ESP_OK) {
+        gpio_set_level(LED_GPIO, 0);
+    }
+
+    return err;
+}
+
+esp_err_t app_start(void)
+{
+    ESP_ERROR_CHECK(gpio_init());
+    ESP_ERROR_CHECK(init_database());
+    ESP_ERROR_CHECK(wifi_manager_start());
+    ESP_ERROR_CHECK(start_webserver());
+
+    ESP_LOGI(TAG, "Door lock demo is ready");
+    ESP_LOGI(TAG, "Register a phone at http://192.168.4.1/register");
+
+    return ESP_OK;
+}

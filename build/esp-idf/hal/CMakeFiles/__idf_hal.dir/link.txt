@@ -1,0 +1,2 @@
+xtensa-esp32-elf-gcc-ar qc libhal.a CMakeFiles/__idf_hal.dir/hal_utils.c.obj CMakeFiles/__idf_hal.dir/efuse_hal.c.obj CMakeFiles/__idf_hal.dir/esp32/efuse_hal.c.obj CMakeFiles/__idf_hal.dir/mmu_hal.c.obj CMakeFiles/__idf_hal.dir/esp32/cache_hal_esp32.c.obj CMakeFiles/__idf_hal.dir/color_hal.c.obj
+xtensa-esp32-elf-gcc-ranlib libhal.a

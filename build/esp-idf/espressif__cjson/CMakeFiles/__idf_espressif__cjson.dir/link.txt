@@ -1,0 +1,2 @@
+xtensa-esp32-elf-gcc-ar qc libespressif__cjson.a CMakeFiles/__idf_espressif__cjson.dir/cJSON/cJSON.c.obj CMakeFiles/__idf_espressif__cjson.dir/cJSON/cJSON_Utils.c.obj
+xtensa-esp32-elf-gcc-ranlib libespressif__cjson.a

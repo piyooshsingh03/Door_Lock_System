@@ -1,0 +1,2 @@
+xtensa-esp32-elf-gcc-ar qc libwifi_manager.a CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj
+xtensa-esp32-elf-gcc-ranlib libwifi_manager.a

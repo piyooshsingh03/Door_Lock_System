@@ -1,0 +1,2 @@
+source /home/piyoosh/esp/projects/wifi_door_lock/build/bootloader/gdbinit/symbols
+source /home/piyoosh/esp/projects/wifi_door_lock/build/bootloader/gdbinit/connect

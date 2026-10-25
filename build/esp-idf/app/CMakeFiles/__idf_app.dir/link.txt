@@ -1,0 +1,2 @@
+xtensa-esp32-elf-gcc-ar qc libapp.a CMakeFiles/__idf_app.dir/app.c.obj CMakeFiles/__idf_app.dir/setting.c.obj CMakeFiles/__idf_app.dir/sos.c.obj
+xtensa-esp32-elf-gcc-ranlib libapp.a

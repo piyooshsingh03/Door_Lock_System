@@ -1,0 +1,2 @@
+xtensa-esp32-elf-gcc-ar qc libesp_driver_dac.a CMakeFiles/__idf_esp_driver_dac.dir/dac_oneshot.c.obj CMakeFiles/__idf_esp_driver_dac.dir/dac_cosine.c.obj CMakeFiles/__idf_esp_driver_dac.dir/dac_continuous.c.obj CMakeFiles/__idf_esp_driver_dac.dir/dac_common.c.obj CMakeFiles/__idf_esp_driver_dac.dir/esp32/dac_dma.c.obj
+xtensa-esp32-elf-gcc-ranlib libesp_driver_dac.a

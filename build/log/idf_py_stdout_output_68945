@@ -1,0 +1,344 @@
+Command: /home/piyoosh/.espressif/python_env/idf6.2_py3.14_env/bin/python /home/piyoosh/esp/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /home/piyoosh/esp/projects/wifi_door_lock/build/wifi_door_lock.elf /home/piyoosh/esp/projects/wifi_door_lock/build/bootloader/bootloader.elf -m '/home/piyoosh/.espressif/python_env/idf6.2_py3.14_env/bin/python' '/home/piyoosh/esp/esp-idf/tools/idf.py'
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6364
+ho 0 tail 12 room 4
+load:0x40078000,len:15720
+ho 0 tail 12 room 4
+load:0x40080400,len:3904
+entry 0x4008061c
+[0;32mI (31) boot: ESP-IDF v6.1-dev-6843-g873d612fdee 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 25 2026 11:16:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f128h (127272) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0002f150 vaddr=3ffb0000 size=00ec8h (  3784) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=93860h (604256) map[0m
+[0;32mI (367) esp_image: segment 3: paddr=000c3888 vaddr=3ffb0ec8 size=037d0h ( 14288) load[0m
+[0;32mI (373) esp_image: segment 4: paddr=000c7060 vaddr=40080000 size=152fch ( 86780) load[0m
+[0;32mI (410) esp_image: segment 5: paddr=000dc364 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (421) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (421) boot: Disabling RNG early entropy source...[0m
+[0;32mI (432) cpu_start: Multicore app[0m
+[0;32mI (440) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (440) cpu_start: Pro cpu start user code[0m
+[0;32mI (440) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (446) app_init: Project name:     wifi_door_lock[0m
+[0;32mI (451) app_init: App version:      1[0m
+[0;32mI (454) app_init: Compile time:     Oct 25 2026 11:17:26[0m
+[0;32mI (459) app_init: ELF file SHA256:  af1b60b50...[0m
+[0;32mI (463) app_init: ESP-IDF:          v6.1-dev-6843-g873d612fdee[0m
+[0;32mI (469) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (473) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (477) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (487) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB92F8 len 00026D08 (155 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 400952FC len 0000AD04 (43 KiB): IRAM[0m
+[0;32mI (515) spi_flash: detected chip: generic[0m
+[0;32mI (517) spi_flash: flash io: dio[0m
+[0;33mW (520) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (534) main_task: Started on CPU0[0m
+[0;32mI (534) main_task: Calling app_main()[0m
+[0;32mI (554) MAIN: Starting door lock project[0m
+[0;32mI (554) DOOR_APP: Starting Wi-Fi door lock application[0m
+[0;32mI (554) SOS: SOS initialized on GPIO4, active LOW[0m
+[0;32mI (564) DOOR_APP: Loaded 2 registered devices[0m
+[0;32mI (574) wifi:wifi driver task: 3ffc0f14, prio:23, stack:6656, core=0[0m
+[0;32mI (584) wifi:wifi firmware version: b1875ae[0m
+[0;32mI (584) wifi:wifi certification version: v7.0[0m
+[0;32mI (584) wifi:config NVS flash: enabled[0m
+[0;32mI (584) wifi:config nano formatting: disabled[0m
+[0;32mI (584) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (594) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (594) wifi:Init management short buffer num: 32[0m
+[0;32mI (604) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (604) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (604) wifi:Init static rx buffer num: 10[0m
+[0;32mI (614) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (614) wifi_init: rx ba win: 6[0m
+[0;32mI (624) wifi_init: accept mbox: 6[0m
+[0;32mI (624) wifi_init: tcpip mbox: 32[0m
+[0;32mI (624) wifi_init: udp mbox: 6[0m
+[0;32mI (624) wifi_init: tcp mbox: 6[0m
+[0;32mI (634) wifi_init: tcp tx win: 5760[0m
+[0;32mI (634) wifi_init: tcp rx win: 5760[0m
+[0;32mI (634) wifi_init: tcp mss: 1440[0m
+[0;32mI (644) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (644) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (654) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (734) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (754) wifi:mode : softAP (cc:7b:5c:36:25:e5)[0m
+[0;32mI (764) wifi:Total power save buffer number: 16[0m
+[0;32mI (764) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (764) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (764) WIFI_MANAGER: Hotspot started: Door_number_5[0m
+[0;32mI (764) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (774) WIFI_MANAGER: Web interface: http://192.168.4.1[0m
+[0;32mI (784) DOOR_APP: Web server started[0m
+[0;32mI (784) DOOR_APP: Open http://192.168.4.1/ on a connected device[0m
+[0;32mI (794) SETTING: Admin settings page started on port 8080[0m
+[0;32mI (794) DOOR_APP: Phone page: http://192.168.4.1/[0m
+[0;32mI (794) DOOR_APP: Admin page: http://192.168.4.1:8080/[0m
+[0;32mI (804) DOOR_APP: Application started successfully[0m
+[0;32mI (804) main_task: Returned from app_main()[0m
+[0;32mI (824) wifi:station: f8:ac:65:00:8f:66 join, AID=1, bgn, 40U[0m
+[0;32mI (884) WIFI_MANAGER: Device connected[0m
+[0;32mI (884) WIFI_MANAGER: MAC: f8:ac:65:00:8f:66[0m
+[0;32mI (1024) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (1024) WIFI_MANAGER: IP assigned to device[0m
+[0;32mI (1024) WIFI_MANAGER: MAC: f8:ac:65:00:8f:66[0m
+[0;32mI (1024) WIFI_MANAGER: IP: 192.168.4.2[0m
+[0;32mI (1924) wifi:<ba-add>idx:2 (ifx:1, f8:ac:65:00:8f:66), tid:0, ssn:15, winSize:64[0m
+[0;32mI (4064) wifi:station: f6:3c:fa:fc:69:28 join, AID=2, bgn, 20[0m
+[0;32mI (4204) WIFI_MANAGER: Device connected[0m
+[0;32mI (4204) WIFI_MANAGER: MAC: f6:3c:fa:fc:69:28[0m
+[0;32mI (4274) wifi:<ba-add>idx:3 (ifx:1, f6:3c:fa:fc:69:28), tid:0, ssn:0, winSize:64[0m
+[0;32mI (4334) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.4[0m
+[0;32mI (4334) WIFI_MANAGER: IP assigned to device[0m
+[0;32mI (4344) WIFI_MANAGER: MAC: f6:3c:fa:fc:69:28[0m
+[0;32mI (4344) WIFI_MANAGER: IP: 192.168.4.4[0m
+[0;32mI (45324) DOOR_APP: Saved 0 registered devices[0m
+[0;33mW (45324) DOOR_APP: All phone registrations deleted by administrator[0m
+[0;33mW (64184) DOOR_APP: GPIO request rejected: invalid token[0m
+[0;33mW (64184) SOS: SOS activated: unauthorized request[0m
+[0;32mI (67184) SOS: SOS inactive: GPIO4 returned HIGH[0m
+[0;32mI (86104) DOOR_APP: Saved 1 registered devices[0m
+[0;32mI (86104) DOOR_APP: Registered device: Piyush[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0040,len:6364
+ho 0 tail 12 room 4
+load:0x40078000,len:15720
+ho 0 tail 12 room 4
+load:0x40080400,len:3904
+entry 0x4008061c
+[0;32mI (31) boot: ESP-IDF v6.1-dev-6843-g873d612fdee 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 25 2026 11:16:37[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (41) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (52) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (68) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (74) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (81) boot: End of partition table[0m
+[0;32mI (84) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f128h (127272) map[0m
+[0;32mI (139) esp_image: segment 1: paddr=0002f150 vaddr=3ffb0000 size=00ec8h (  3784) load[0m
+[0;32mI (141) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=93860h (604256) map[0m
+[0;32mI (367) esp_image: segment 3: paddr=000c3888 vaddr=3ffb0ec8 size=037d0h ( 14288) load[0m
+[0;32mI (373) esp_image: segment 4: paddr=000c7060 vaddr=40080000 size=152fch ( 86780) load[0m
+[0;32mI (410) esp_image: segment 5: paddr=000dc364 vaddr=50000000 size=00028h (    40) load[0m
+[0;32mI (421) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (421) boot: Disabling RNG early entropy source...[0m
+[0;32mI (432) cpu_start: Multicore app[0m
+[0;32mI (440) cpu_start: GPIO 3 and 1 are used as console UART I/O pins[0m
+[0;32mI (440) cpu_start: Pro cpu start user code[0m
+[0;32mI (440) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (442) app_init: Application information:[0m
+[0;32mI (446) app_init: Project name:     wifi_door_lock[0m
+[0;32mI (451) app_init: App version:      1[0m
+[0;32mI (454) app_init: Compile time:     Oct 25 2026 11:17:26[0m
+[0;32mI (459) app_init: ELF file SHA256:  af1b60b50...[0m
+[0;32mI (463) app_init: ESP-IDF:          v6.1-dev-6843-g873d612fdee[0m
+[0;32mI (469) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (473) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (477) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (487) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (492) heap_init: At 3FFB92F8 len 00026D08 (155 KiB): DRAM[0m
+[0;32mI (497) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (503) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (508) heap_init: At 400952FC len 0000AD04 (43 KiB): IRAM[0m
+[0;32mI (515) spi_flash: detected chip: generic[0m
+[0;32mI (517) spi_flash: flash io: dio[0m
+[0;33mW (520) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (534) main_task: Started on CPU0[0m
+[0;32mI (534) main_task: Calling app_main()[0m
+[0;32mI (554) MAIN: Starting door lock project[0m
+[0;32mI (554) DOOR_APP: Starting Wi-Fi door lock application[0m
+[0;32mI (554) SOS: SOS initialized on GPIO4, active LOW[0m
+[0;32mI (564) DOOR_APP: Loaded 1 registered devices[0m
+[0;32mI (574) wifi:wifi driver task: 3ffc0e90, prio:23, stack:6656, core=0[0m
+[0;32mI (584) wifi:wifi firmware version: b1875ae[0m
+[0;32mI (584) wifi:wifi certification version: v7.0[0m
+[0;32mI (584) wifi:config NVS flash: enabled[0m
+[0;32mI (584) wifi:config nano formatting: disabled[0m
+[0;32mI (584) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (594) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (594) wifi:Init management short buffer num: 32[0m
+[0;32mI (604) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (604) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (604) wifi:Init static rx buffer num: 10[0m
+[0;32mI (614) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (614) wifi_init: rx ba win: 6[0m
+[0;32mI (614) wifi_init: accept mbox: 6[0m
+[0;32mI (624) wifi_init: tcpip mbox: 32[0m
+[0;32mI (624) wifi_init: udp mbox: 6[0m
+[0;32mI (624) wifi_init: tcp mbox: 6[0m
+[0;32mI (634) wifi_init: tcp tx win: 5760[0m
+[0;32mI (634) wifi_init: tcp rx win: 5760[0m
+[0;32mI (634) wifi_init: tcp mss: 1440[0m
+[0;32mI (644) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (644) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (654) phy_init: phy_version 4863,a3a4459,Oct 28 2025,14:30:06[0m
+[0;32mI (744) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;32mI (794) wifi:mode : softAP (cc:7b:5c:36:25:e5)[0m
+[0;32mI (804) wifi:Total power save buffer number: 16[0m
+[0;32mI (804) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (804) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (804) WIFI_MANAGER: Hotspot started: Door_number_5[0m
+[0;32mI (804) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (814) WIFI_MANAGER: Web interface: http://192.168.4.1[0m
+[0;32mI (824) DOOR_APP: Web server started[0m
+[0;32mI (824) DOOR_APP: Open http://192.168.4.1/ on a connected device[0m
+[0;32mI (834) SETTING: Admin settings page started on port 8080[0m
+[0;32mI (834) DOOR_APP: Phone page: http://192.168.4.1/[0m
+[0;32mI (834) DOOR_APP: Admin page: http://192.168.4.1:8080/[0m
+[0;32mI (844) DOOR_APP: Application started successfully[0m
+[0;32mI (844) main_task: Returned from app_main()[0m
+[0;32mI (2614) wifi:station: f8:ac:65:00:8f:66 join, AID=1, bgn, 40U[0m
+[0;32mI (2664) WIFI_MANAGER: Device connected[0m
+[0;32mI (2664) WIFI_MANAGER: MAC: f8:ac:65:00:8f:66[0m
+[0;32mI (2704) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (2704) WIFI_MANAGER: IP assigned to device[0m
+[0;32mI (2704) WIFI_MANAGER: MAC: f8:ac:65:00:8f:66[0m
+[0;32mI (2714) WIFI_MANAGER: IP: 192.168.4.2[0m
+[0;32mI (5874) wifi:<ba-add>idx:2 (ifx:1, f8:ac:65:00:8f:66), tid:0, ssn:24, winSize:64[0m
+[0;33mW (12674) DOOR_APP: GPIO request rejected: invalid token[0m
+[0;33mW (12674) SOS: SOS activated: unauthorized request[0m
+[0;32mI (15674) SOS: SOS inactive: GPIO4 returned HIGH[0m
+[0;32mI (349594) wifi:station: f8:ac:65:00:8f:66 leave, AID = 1, reason = 3, bss_flags is 756835, bss:0x3ffba6ac[0m
+[0;32mI (349594) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (349594) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (349604) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (349614) WIFI_MANAGER: Device disconnected[0m
+[0;32mI (349614) WIFI_MANAGER: MAC: f8:ac:65:00:8f:66[0m
+����������������������������������������������������������������5:00:8f:66 join, AID=1, bgn, 40U
+[0;32mI (600704) WIFI_MANAGER: Device connected[0m
+[0;32mI (600704) WIFI_MANAGER: MAC: f8:ac:65:00:8f:66[0m
+[0;32mI (600714) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (600714) WIFI_MANAGER: IP assigned to device[0m
+[0;32mI (600714) WIFI_MANAGER: MAC: f8:ac:65:00:8f:66[0m
+[0;32mI (600724) WIFI_MANAGER: IP: 192.168.4.2[0m
+[0;32mI (600964) wifi:<ba-add>idx:2 (ifx:1, f8:ac:65:00:8f:66), tid:0, ssn:15, winSize:64[0m
+[0;32mI (630364) wifi:station: f6:3c:fa:fc:69:28 join, AID=2, bgn, 20[0m
+[0;32mI (630434) WIFI_MANAGER: Device connected[0m
+[0;32mI (630434) WIFI_MANAGER: MAC: f6:3c:fa:fc:69:28[0m
+[0;32mI (630534) wifi:<ba-add>idx:3 (ifx:1, f6:3c:fa:fc:69:28), tid:0, ssn:0, winSize:64[0m
+[0;32mI (630694) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.4[0m
+[0;32mI (630694) WIFI_MANAGER: IP assigned to device[0m
+[0;32mI (630704) WIFI_MANAGER: MAC: f6:3c:fa:fc:69:28[0m
+[0;32mI (630704) WIFI_MANAGER: IP: 192.168.4.4[0m
+[0;32mI (681814) DOOR_APP: Saved 2 registered devices[0m
+[0;32mI (681814) DOOR_APP: Registered device: Pk[0m
+[1;31mE (685344) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (685344) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (685354) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (685354) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (686414) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (686414) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (686424) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (686424) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (689554) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (689554) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (689564) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (689564) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (691194) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (691194) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (691204) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (691204) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (691954) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (691954) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (691964) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (691964) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (692714) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (692714) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (692714) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (692724) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (693604) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (693604) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (693614) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (693614) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (694234) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (694234) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (694234) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (694234) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (694954) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (694954) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (694954) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (694954) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (700004) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (700004) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (700004) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (700004) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (701534) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (701544) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (701554) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (701554) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (701554) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (701554) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (702954) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (702954) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (702954) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (702954) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (706974) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (706974) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (706984) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (706984) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (710304) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (710304) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (710304) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (710304) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (711334) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (711334) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (711344) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (711344) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (711354) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (711354) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (711644) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (711644) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (711654) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (711654) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (712674) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (712674) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (712684) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (712684) httpd: httpd_server: error accepting new connection[0m
+[1;31mE (713734) httpd: httpd_accept_conn: error in accept (23)[0m
+[0;33mW (713744) httpd: httpd_server: error accepting new connection[0m
+[0;33mW (717974) DOOR_APP: GPIO request rejected: invalid token[0m
+[0;33mW (717974) SOS: SOS activated: unauthorized request[0m
+[0;32mI (720974) SOS: SOS inactive: GPIO4 returned HIGH[0m
+[0;32mI (745784) wifi:station: f8:ac:65:00:8f:66 leave, AID = 1, reason = 3, bss_flags is 756835, bss:0x3ffba6ac[0m
+[0;32mI (745784) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (745784) wifi:<ba-del>idx:2, tid:0[0m
+[0;32mI (745794) wifi:new:<1,1>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (745794) WIFI_MANAGER: Device disconnected[0m
+[0;32mI (745804) WIFI_MANAGER: MAC: f8:ac:65:00:8f:66[0m
+����������������������������������������������������������������k_err: error in recv : 104
+[0;33mW (864734) httpd_txrx: httpd_sock_err: error in recv : 104[0m

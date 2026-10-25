@@ -1,0 +1,2 @@
+xtensa-esp32-elf-gcc-ar qc libesp_mm.a CMakeFiles/__idf_esp_mm.dir/esp_mmu_map.c.obj CMakeFiles/__idf_esp_mm.dir/port/esp32/ext_mem_layout.c.obj CMakeFiles/__idf_esp_mm.dir/esp_cache_msync.c.obj CMakeFiles/__idf_esp_mm.dir/esp_cache_utils.c.obj CMakeFiles/__idf_esp_mm.dir/cache_esp32.c.obj
+xtensa-esp32-elf-gcc-ranlib libesp_mm.a

@@ -1,0 +1,2 @@
+xtensa-esp32-elf-gcc-ar qc libmain.a CMakeFiles/__idf_main.dir/bootloader_start.c.obj
+xtensa-esp32-elf-gcc-ranlib libmain.a

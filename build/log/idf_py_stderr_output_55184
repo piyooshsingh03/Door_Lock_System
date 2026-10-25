@@ -1,0 +1,44 @@
+Command: make -j 10 all
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished successfully
+/home/piyoosh/esp/projects/wifi_door_lock/components/wifi_manager/wifi_manager.c: In function 'wifi_event_handler':
+/home/piyoosh/esp/projects/wifi_door_lock/components/wifi_manager/wifi_manager.c:46:16: warning: 'IP_EVENT_AP_STAIPASSIGNED' is deprecated: Use IP_EVENT_ASSIGNED_IP_TO_CLIENT instead [-Wdeprecated-declarations]
+   46 |                event_id == IP_EVENT_AP_STAIPASSIGNED) {
+      |                ^~~~~~~~
+In file included from /home/piyoosh/esp/esp-idf/components/esp_netif/include/esp_netif.h:13,
+                 from /home/piyoosh/esp/projects/wifi_door_lock/components/wifi_manager/wifi_manager.c:7:
+/home/piyoosh/esp/esp-idf/components/esp_netif/include/esp_netif_types.h:102:5: note: declared here
+  102 |     IP_EVENT_AP_STAIPASSIGNED __attribute__((deprecated("Use IP_EVENT_ASSIGNED_IP_TO_CLIENT instead")))
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/piyoosh/esp/projects/wifi_door_lock/components/wifi_manager/wifi_manager.c:49:13: warning: 'ip_event_ap_staipassigned_t' is deprecated: Use ip_event_assigned_ip_to_client_t instead of ip_event_ap_staipassigned_t [-Wdeprecated-declarations]
+   49 |             (ip_event_ap_staipassigned_t *)event_data;
+      |             ^
+/home/piyoosh/esp/esp-idf/components/esp_netif/include/esp_netif_types.h:174:9: note: declared here
+  174 | typedef struct {
+      |         ^~~~~~
+/home/piyoosh/esp/projects/wifi_door_lock/components/wifi_manager/wifi_manager.c:49:13: warning: 'ip_event_ap_staipassigned_t' is deprecated: Use ip_event_assigned_ip_to_client_t instead of ip_event_ap_staipassigned_t [-Wdeprecated-declarations]
+   49 |             (ip_event_ap_staipassigned_t *)event_data;
+      |             ^
+/home/piyoosh/esp/esp-idf/components/esp_netif/include/esp_netif_types.h:174:9: note: declared here
+  174 | typedef struct {
+      |         ^~~~~~
+/home/piyoosh/esp/projects/wifi_door_lock/components/wifi_manager/wifi_manager.c: In function 'wifi_manager_start':
+/home/piyoosh/esp/projects/wifi_door_lock/components/wifi_manager/wifi_manager.c:82:1: warning: 'IP_EVENT_AP_STAIPASSIGNED' is deprecated: Use IP_EVENT_ASSIGNED_IP_TO_CLIENT instead [-Wdeprecated-declarations]
+   82 | ESP_ERROR_CHECK(
+      | ^~~~~~~~~~~~~~~
+/home/piyoosh/esp/esp-idf/components/esp_netif/include/esp_netif_types.h:102:5: note: declared here
+  102 |     IP_EVENT_AP_STAIPASSIGNED __attribute__((deprecated("Use IP_EVENT_ASSIGNED_IP_TO_CLIENT instead")))
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~
+NOTE: /home/piyoosh/esp/esp-idf/components/bt/host/nimble/Kconfig.in:1461: 
+BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value (only 'y' and 
+'n' are allowed). Value is treated as 'n'.
+NOTE: /home/piyoosh/esp/esp-idf/components/bt/controller/esp32/Kconfig.in:177: 
+BTDM_CTRL_LEGACY_AUTH_VENDOR_EVT_EFF: 'default 0' is not a valid bool value 
+(only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: /home/piyoosh/esp/esp-idf/components/fatfs/Kconfig:240: FATFS_PRINT_LLI: 
+'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.
+NOTE: /home/piyoosh/esp/esp-idf/components/fatfs/Kconfig:245: FATFS_PRINT_FLOAT:
+'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is 
+treated as 'n'.

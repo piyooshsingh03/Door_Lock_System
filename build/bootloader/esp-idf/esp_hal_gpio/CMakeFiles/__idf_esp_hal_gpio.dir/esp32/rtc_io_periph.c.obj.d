@@ -1,0 +1,34 @@
+esp-idf/esp_hal_gpio/CMakeFiles/__idf_esp_hal_gpio.dir/esp32/rtc_io_periph.c.obj: \
+ /home/piyoosh/esp/esp-idf/components/esp_hal_gpio/esp32/rtc_io_periph.c \
+ /home/piyoosh/esp/esp-idf/components/esp_hal_gpio/include/hal/rtc_io_periph.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/stdint.h \
+ /home/piyoosh/esp/esp-idf/components/esp_libc/platform_include/sys/cdefs.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/cdefs.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/config.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/machine/ieeefp.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/features.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/picolibc.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/machine/_default_types.h \
+ /home/piyoosh/esp/projects/wifi_door_lock/build/bootloader/config/sdkconfig.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/16.1.0/include/stddef.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/_stdint.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/_intsup.h \
+ /home/piyoosh/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /home/piyoosh/esp/esp-idf/components/soc/include/soc/soc_caps_eval.h \
+ /home/piyoosh/esp/esp-idf/components/soc/esp32/include/soc/rtc_io_channel.h \
+ /home/piyoosh/esp/esp-idf/components/soc/esp32/register/soc/rtc_io_reg.h \
+ /home/piyoosh/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_assert.h \
+ /home/piyoosh/esp/esp-idf/components/esp_libc/platform_include/assert.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/stdlib.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/machine/stdlib.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/alloca.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/_locale.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/_wait.h \
+ /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/assert.h \
+ /home/piyoosh/esp/esp-idf/components/soc/esp32/include/soc/interrupts.h \
+ /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /home/piyoosh/esp/esp-idf/components/soc/esp32/register/soc/reg_base.h \
+ /home/piyoosh/esp/esp-idf/components/soc/esp32/register/soc/rtc_cntl_reg.h \
+ /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_attr.h \
+ /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_assert.h
