@@ -1,0 +1,204 @@
+Command: make -j 10 all
+-- Minimal build - OFF
+-- esp-idf-configdep will be used for faster recompilation
+-- Compiler launcher chain: esp-idf-configdep
+-- Building ESP-IDF components for target esp32
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/cjson (1.7.19~2)
+NOTICE: [2/2] idf (6.2.0)
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file /home/piyoosh/esp/projects/wifi_door_lock/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script /home/piyoosh/esp/esp-idf/components/esp_hal_regi2c/esp32/rom.regi2c.ld
+-- App "wifi_door_lock" version: 893b061-dirty
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script /home/piyoosh/esp/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+--   -> Preprocessing .in script: /home/piyoosh/esp/esp-idf/components/esp_system/ld/esp32/memory.ld.in
+-- Adding linker script /home/piyoosh/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Preprocessing .in script: /home/piyoosh/esp/esp-idf/components/esp_system/ld/esp32/sections.ld.in
+--   -> Applying ldgen processing: /home/piyoosh/esp/projects/wifi_door_lock/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/piyoosh/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script /home/piyoosh/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script /home/piyoosh/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script /home/piyoosh/esp/esp-idf/components/esp_rom/esp32/ld/esp32.rom.libc-funcs.ld
+-- Adding linker script /home/piyoosh/esp/esp-idf/components/soc/esp32/ld/esp32.peripherals.ld
+-- Component idf::esp_trace will be linked with -Wl,--whole-archive
+-- Components: app app_trace app_update bootloader bootloader_support bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_asrc_adapter esp_blockdev esp_blockdev_util esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_cordic esp_driver_dac esp_driver_dma esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_i3c esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sd_intf esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ana_cmpr esp_hal_ana_conv esp_hal_asrc esp_hal_cam esp_hal_clock esp_hal_cordic esp_hal_debug_assist esp_hal_dma esp_hal_emac esp_hal_gpio esp_hal_gpspi esp_hal_i2c esp_hal_i2s esp_hal_i3c esp_hal_ieee802154 esp_hal_jpeg esp_hal_lcd esp_hal_ledc esp_hal_mcpwm esp_hal_mspi esp_hal_parlio esp_hal_pcnt esp_hal_pmu esp_hal_ppa esp_hal_regi2c esp_hal_rmt esp_hal_rtc_timer esp_hal_sd esp_hal_security esp_hal_systimer esp_hal_timg esp_hal_touch_sens esp_hal_twai esp_hal_uart esp_hal_usb esp_hal_wdt esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_libc esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_riscv_trace esp_rom esp_security esp_stdio esp_system esp_timer esp_trace esp_usb_cdc_rom_console esp_wifi espcoredump espressif__cjson esptool_py fatfs freertos hal heap http_parser ieee802154 log lwip main mbedtls nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport ulp unity vfs wear_levelling wifi_manager wpa_supplicant xtensa
+-- Component paths: /home/piyoosh/esp/projects/wifi_door_lock/components/app /home/piyoosh/esp/esp-idf/components/app_trace /home/piyoosh/esp/esp-idf/components/app_update /home/piyoosh/esp/esp-idf/components/bootloader /home/piyoosh/esp/esp-idf/components/bootloader_support /home/piyoosh/esp/esp-idf/components/bt /home/piyoosh/esp/esp-idf/components/cmock /home/piyoosh/esp/esp-idf/components/console /home/piyoosh/esp/esp-idf/components/cxx /home/piyoosh/esp/esp-idf/components/driver /home/piyoosh/esp/esp-idf/components/efuse /home/piyoosh/esp/esp-idf/components/esp-tls /home/piyoosh/esp/esp-idf/components/esp_adc /home/piyoosh/esp/esp-idf/components/esp_app_format /home/piyoosh/esp/esp-idf/components/esp_asrc_adapter /home/piyoosh/esp/esp-idf/components/esp_blockdev /home/piyoosh/esp/esp-idf/components/esp_blockdev_util /home/piyoosh/esp/esp-idf/components/esp_bootloader_format /home/piyoosh/esp/esp-idf/components/esp_coex /home/piyoosh/esp/esp-idf/components/esp_common /home/piyoosh/esp/esp-idf/components/esp_driver_ana_cmpr /home/piyoosh/esp/esp-idf/components/esp_driver_bitscrambler /home/piyoosh/esp/esp-idf/components/esp_driver_cam /home/piyoosh/esp/esp-idf/components/esp_driver_cordic /home/piyoosh/esp/esp-idf/components/esp_driver_dac /home/piyoosh/esp/esp-idf/components/esp_driver_dma /home/piyoosh/esp/esp-idf/components/esp_driver_gpio /home/piyoosh/esp/esp-idf/components/esp_driver_gptimer /home/piyoosh/esp/esp-idf/components/esp_driver_i2c /home/piyoosh/esp/esp-idf/components/esp_driver_i2s /home/piyoosh/esp/esp-idf/components/esp_driver_i3c /home/piyoosh/esp/esp-idf/components/esp_driver_isp /home/piyoosh/esp/esp-idf/components/esp_driver_jpeg /home/piyoosh/esp/esp-idf/components/esp_driver_ledc /home/piyoosh/esp/esp-idf/components/esp_driver_mcpwm /home/piyoosh/esp/esp-idf/components/esp_driver_parlio /home/piyoosh/esp/esp-idf/components/esp_driver_pcnt /home/piyoosh/esp/esp-idf/components/esp_driver_ppa /home/piyoosh/esp/esp-idf/components/esp_driver_rmt /home/piyoosh/esp/esp-idf/components/esp_driver_sd_intf /home/piyoosh/esp/esp-idf/components/esp_driver_sdio /home/piyoosh/esp/esp-idf/components/esp_driver_sdm /home/piyoosh/esp/esp-idf/components/esp_driver_sdmmc /home/piyoosh/esp/esp-idf/components/esp_driver_sdspi /home/piyoosh/esp/esp-idf/components/esp_driver_spi /home/piyoosh/esp/esp-idf/components/esp_driver_touch_sens /home/piyoosh/esp/esp-idf/components/esp_driver_tsens /home/piyoosh/esp/esp-idf/components/esp_driver_twai /home/piyoosh/esp/esp-idf/components/esp_driver_uart /home/piyoosh/esp/esp-idf/components/esp_driver_usb_serial_jtag /home/piyoosh/esp/esp-idf/components/esp_eth /home/piyoosh/esp/esp-idf/components/esp_event /home/piyoosh/esp/esp-idf/components/esp_gdbstub /home/piyoosh/esp/esp-idf/components/esp_hal_ana_cmpr /home/piyoosh/esp/esp-idf/components/esp_hal_ana_conv /home/piyoosh/esp/esp-idf/components/esp_hal_asrc /home/piyoosh/esp/esp-idf/components/esp_hal_cam /home/piyoosh/esp/esp-idf/components/esp_hal_clock /home/piyoosh/esp/esp-idf/components/esp_hal_cordic /home/piyoosh/esp/esp-idf/components/esp_hal_debug_assist /home/piyoosh/esp/esp-idf/components/esp_hal_dma /home/piyoosh/esp/esp-idf/components/esp_hal_emac /home/piyoosh/esp/esp-idf/components/esp_hal_gpio /home/piyoosh/esp/esp-idf/components/esp_hal_gpspi /home/piyoosh/esp/esp-idf/components/esp_hal_i2c /home/piyoosh/esp/esp-idf/components/esp_hal_i2s /home/piyoosh/esp/esp-idf/components/esp_hal_i3c /home/piyoosh/esp/esp-idf/components/esp_hal_ieee802154 /home/piyoosh/esp/esp-idf/components/esp_hal_jpeg /home/piyoosh/esp/esp-idf/components/esp_hal_lcd /home/piyoosh/esp/esp-idf/components/esp_hal_ledc /home/piyoosh/esp/esp-idf/components/esp_hal_mcpwm /home/piyoosh/esp/esp-idf/components/esp_hal_mspi /home/piyoosh/esp/esp-idf/components/esp_hal_parlio /home/piyoosh/esp/esp-idf/components/esp_hal_pcnt /home/piyoosh/esp/esp-idf/components/esp_hal_pmu /home/piyoosh/esp/esp-idf/components/esp_hal_ppa /home/piyoosh/esp/esp-idf/components/esp_hal_regi2c /home/piyoosh/esp/esp-idf/components/esp_hal_rmt /home/piyoosh/esp/esp-idf/components/esp_hal_rtc_timer /home/piyoosh/esp/esp-idf/components/esp_hal_sd /home/piyoosh/esp/esp-idf/components/esp_hal_security /home/piyoosh/esp/esp-idf/components/esp_hal_systimer /home/piyoosh/esp/esp-idf/components/esp_hal_timg /home/piyoosh/esp/esp-idf/components/esp_hal_touch_sens /home/piyoosh/esp/esp-idf/components/esp_hal_twai /home/piyoosh/esp/esp-idf/components/esp_hal_uart /home/piyoosh/esp/esp-idf/components/esp_hal_usb /home/piyoosh/esp/esp-idf/components/esp_hal_wdt /home/piyoosh/esp/esp-idf/components/esp_hid /home/piyoosh/esp/esp-idf/components/esp_http_client /home/piyoosh/esp/esp-idf/components/esp_http_server /home/piyoosh/esp/esp-idf/components/esp_https_ota /home/piyoosh/esp/esp-idf/components/esp_https_server /home/piyoosh/esp/esp-idf/components/esp_hw_support /home/piyoosh/esp/esp-idf/components/esp_lcd /home/piyoosh/esp/esp-idf/components/esp_libc /home/piyoosh/esp/esp-idf/components/esp_local_ctrl /home/piyoosh/esp/esp-idf/components/esp_mm /home/piyoosh/esp/esp-idf/components/esp_netif /home/piyoosh/esp/esp-idf/components/esp_netif_stack /home/piyoosh/esp/esp-idf/components/esp_partition /home/piyoosh/esp/esp-idf/components/esp_phy /home/piyoosh/esp/esp-idf/components/esp_pm /home/piyoosh/esp/esp-idf/components/esp_psram /home/piyoosh/esp/esp-idf/components/esp_ringbuf /home/piyoosh/esp/esp-idf/components/esp_riscv_trace /home/piyoosh/esp/esp-idf/components/esp_rom /home/piyoosh/esp/esp-idf/components/esp_security /home/piyoosh/esp/esp-idf/components/esp_stdio /home/piyoosh/esp/esp-idf/components/esp_system /home/piyoosh/esp/esp-idf/components/esp_timer /home/piyoosh/esp/esp-idf/components/esp_trace /home/piyoosh/esp/esp-idf/components/esp_usb_cdc_rom_console /home/piyoosh/esp/esp-idf/components/esp_wifi /home/piyoosh/esp/esp-idf/components/espcoredump /home/piyoosh/esp/projects/wifi_door_lock/managed_components/espressif__cjson /home/piyoosh/esp/esp-idf/components/esptool_py /home/piyoosh/esp/esp-idf/components/fatfs /home/piyoosh/esp/esp-idf/components/freertos /home/piyoosh/esp/esp-idf/components/hal /home/piyoosh/esp/esp-idf/components/heap /home/piyoosh/esp/esp-idf/components/http_parser /home/piyoosh/esp/esp-idf/components/ieee802154 /home/piyoosh/esp/esp-idf/components/log /home/piyoosh/esp/esp-idf/components/lwip /home/piyoosh/esp/projects/wifi_door_lock/main /home/piyoosh/esp/esp-idf/components/mbedtls /home/piyoosh/esp/esp-idf/components/nvs_flash /home/piyoosh/esp/esp-idf/components/nvs_sec_provider /home/piyoosh/esp/esp-idf/components/openthread /home/piyoosh/esp/esp-idf/components/partition_table /home/piyoosh/esp/esp-idf/components/perfmon /home/piyoosh/esp/esp-idf/components/protobuf-c /home/piyoosh/esp/esp-idf/components/protocomm /home/piyoosh/esp/esp-idf/components/pthread /home/piyoosh/esp/esp-idf/components/rt /home/piyoosh/esp/esp-idf/components/sdmmc /home/piyoosh/esp/esp-idf/components/soc /home/piyoosh/esp/esp-idf/components/spi_flash /home/piyoosh/esp/esp-idf/components/spiffs /home/piyoosh/esp/esp-idf/components/tcp_transport /home/piyoosh/esp/esp-idf/components/ulp /home/piyoosh/esp/esp-idf/components/unity /home/piyoosh/esp/esp-idf/components/vfs /home/piyoosh/esp/esp-idf/components/wear_levelling /home/piyoosh/esp/projects/wifi_door_lock/components/wifi_manager /home/piyoosh/esp/esp-idf/components/wpa_supplicant /home/piyoosh/esp/esp-idf/components/xtensa
+-- Configuring done (22.3s)
+-- Generating done (2.6s)
+-- Build files have been written to: /home/piyoosh/esp/projects/wifi_door_lock/build
+[  0%] Built target partition_table_bin
+[  0%] Built target sections_ld_in_preprocess
+[  0%] Built target memory_ld_in_preprocess
+[  0%] Built target __idf_ulp
+[  0%] Built target custom_bundle
+[  0%] Built target _project_elf_src
+[  0%] Performing build step for 'bootloader'
+[  1%] Built target bootloader_sections_ld_in_preprocess
+[  1%] Built target bootloader_memory_ld_in_preprocess
+[  7%] Built target __idf_log
+[  8%] Built target _project_elf_src
+[ 14%] Built target __idf_esp_rom
+[ 17%] Built target __idf_esp_common
+[ 26%] Built target __idf_esp_hw_support
+[ 27%] Built target __idf_esp_system
+[ 33%] Built target __idf_efuse
+[ 51%] Built target __idf_bootloader_support
+[ 55%] Built target __idf_esp_security
+[ 56%] Built target __idf_esp_hal_security
+[  8%] Built target __idf_lwip
+[ 60%] Built target __idf_esp_hal_ana_conv
+[ 61%] Built target __idf_esp_hal_i2s
+[  8%] Built target __idf_vfs
+[ 62%] Built target __idf_esp_hal_wdt
+[ 64%] Built target __idf_esp_hal_timg
+[ 10%] Built target __idf_nvs_flash
+[ 65%] Built target __idf_micro-ecc
+[ 10%] Built target __idf_nvs_sec_provider
+[ 66%] Built target __idf_esp_bootloader_format
+[ 11%] Built target __idf_esp_driver_uart
+[ 69%] Built target __idf_spi_flash
+[ 71%] Built target __idf_esp_hal_mspi
+[ 11%] Built target __idf_esp_psram
+[ 72%] Built target __idf_esp_hal_clock
+[ 11%] Built target __idf_esp_ringbuf
+[ 76%] Built target __idf_esp_hal_gpspi
+[ 12%] Built target __idf_esp_timer
+[ 79%] Built target __idf_esp_hal_uart
+[ 13%] Built target __idf_cxx
+[ 80%] Built target __idf_esp_hal_pmu
+[ 84%] Built target __idf_esp_hal_gpio
+[ 13%] Built target __idf_pthread
+[ 88%] Built target __idf_hal
+[ 15%] Built target __idf_esp_libc
+[ 93%] Built target __idf_soc
+[ 95%] Built target __idf_xtensa
+[ 97%] Built target __idf_main
+[ 17%] Built target __idf_freertos
+[ 98%] Built target bootloader.elf
+[100%] Built target gen_bootloader_binary
+[100%] Built target gen_project_binary
+[ 22%] Built target __idf_esp_hw_support
+[ 23%] Built target __idf_esp_hal_touch_sens
+[ 23%] Built target __idf_esp_hal_pmu
+[ 24%] Built target __idf_esp_hal_gpio
+[ 25%] Built target __idf_soc
+Bootloader binary size 0x65e0 bytes. 0xa20 bytes (9%) free.
+[ 26%] Built target __idf_heap
+[100%] Built target bootloader_check_size
+[100%] Built target app
+[ 28%] Built target __idf_log
+[ 28%] No install step for 'bootloader'
+[ 28%] Completed 'bootloader'
+[ 28%] Built target __idf_hal
+[ 29%] Built target __idf_esp_rom
+[ 30%] Built target bootloader
+[ 30%] Built target __idf_esp_common
+[ 33%] Built target __idf_esp_system
+[ 35%] Built target __idf_spi_flash
+[ 37%] Built target __idf_bootloader_support
+[ 38%] Built target __idf_esp_hal_ana_conv
+[ 38%] Built target __idf_esp_hal_i2s
+[ 39%] Built target __idf_esp_hal_wdt
+[ 39%] Built target __idf_esp_hal_timg
+[ 40%] Built target everest
+[ 41%] Built target p256-m
+[ 45%] Built target builtin
+[ 46%] Built target pqcp
+[ 47%] Built target extras
+[ 47%] Built target platform
+[ 47%] Built target utilities
+[ 50%] Built target tfpsacrypto
+[ 52%] Built target mbedtls
+[ 53%] Built target mbedx509
+[ 54%] Built target __idf_mbedtls
+[ 54%] Built target __idf_esp_driver_dma
+[ 54%] Built target __idf_esp_mm
+[ 55%] Built target __idf_esp_pm
+[ 55%] Built target __idf_esp_hal_uart
+[ 56%] Built target __idf_esp_driver_gpio
+[ 57%] Built target __idf_esp_security
+[ 58%] Built target __idf_efuse
+[ 59%] Built target __idf_esp_partition
+[ 59%] Built target __idf_app_update
+[ 59%] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[ 59%] Linking C static library libesp_app_format.a
+[ 59%] Built target __idf_esp_app_format
+[ 59%] Built target __idf_esp_hal_security
+[ 59%] Built target __idf_esp_hal_mspi
+[ 59%] Built target __idf_esp_hal_clock
+[ 59%] Built target __idf_esp_hal_gpspi
+[ 59%] Built target __idf_esp_stdio
+[ 60%] Built target __idf_xtensa
+[ 60%] Built target __idf_http_parser
+[ 60%] Built target __idf_espressif__cjson
+[ 60%] Built target __idf_esp_driver_gptimer
+[ 61%] Built target __idf_esp_driver_spi
+[ 62%] Built target __idf_esp_hal_i2c
+[ 63%] Built target __idf_esp_event
+[ 63%] Built target __idf_esp_hal_twai
+[ 64%] Built target __idf_unity
+[ 64%] Built target __idf_esp_gdbstub
+[ 65%] Built target __idf_console
+[ 66%] Built target __idf_esp_driver_i2s
+[ 66%] Built target __idf_esp_blockdev_util
+[ 68%] Built target __idf_esp_hal_ledc
+[ 68%] Built target __idf_esp_hal_pcnt
+[ 68%] Built target __idf_esp_hal_mcpwm
+[ 69%] Built target __idf_esp_driver_cam
+[ 69%] Built target __idf_esp_driver_sdm
+[ 69%] Built target __idf_esp_hal_rmt
+[ 69%] Built target __idf_esp_driver_touch_sens
+[ 70%] Built target __idf_esp_hal_sd
+[ 70%] Built target __idf_esp_hal_emac
+[ 70%] Built target __idf_esp_driver_twai
+[ 71%] Built target __idf_esp_hal_lcd
+[ 71%] Built target __idf_protobuf-c
+[ 72%] Built target __idf_rt
+[ 72%] Built target __idf_perfmon
+[ 73%] Built target __idf_wear_levelling
+[ 74%] Built target __idf_cmock
+[ 75%] Built target __idf_spiffs
+[ 75%] Built target __idf_esp_driver_ledc
+[ 76%] Built target __idf_esp_netif
+[ 77%] Built target __idf_esp_adc
+[ 77%] Built target __idf_esp_driver_i2c
+[ 77%] Built target __idf_driver
+[ 77%] Built target __idf_esp_driver_pcnt
+[ 77%] Built target __idf_esp_driver_dac
+[ 78%] Built target __idf_esp-tls
+[ 79%] Built target __idf_esp_http_server
+[ 80%] Built target __idf_esp_driver_mcpwm
+[ 80%] Built target __idf_esp_driver_sdio
+[ 80%] Built target __idf_sdmmc
+[ 81%] Built target __idf_esp_eth
+[ 81%] Built target __idf_esp_driver_rmt
+[ 82%] Built target __idf_esp_lcd
+[ 82%] Built target __idf_esp_https_server
+[ 82%] Built target __idf_esp_driver_sd_intf
+[ 82%] Built target __idf_esp_driver_sdspi
+[ 84%] Built target __idf_esp_wifi
+[ 85%] Built target __idf_tcp_transport
+[ 86%] Built target __idf_esp_driver_sdmmc
+[ 87%] Built target __idf_esp_coex
+[ 88%] Built target __idf_esp_http_client
+[ 89%] Built target __idf_fatfs
+[ 89%] Built target __idf_esp_https_ota
+[ 97%] Built target __idf_wpa_supplicant
+[ 97%] Built target __idf_esp_phy
+[ 97%] Built target __idf_wifi_manager
+[ 97%] Built target __idf_esp_hid
+[ 98%] Built target __idf_protocomm
+[ 98%] Building C object esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj
+[ 98%] Building C object esp-idf/app/CMakeFiles/__idf_app.dir/app.c.obj
+[ 99%] Built target __idf_esp_local_ctrl

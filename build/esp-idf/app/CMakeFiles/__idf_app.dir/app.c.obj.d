@@ -29,6 +29,7 @@ esp-idf/app/CMakeFiles/__idf_app.dir/app.c.obj: \
  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/assert.h \
  /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_compiler.h \
  /home/piyoosh/esp/projects/wifi_door_lock/components/app/include/auth_api.h \
+ /home/piyoosh/esp/projects/wifi_door_lock/components/app/include/sos.h \
  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/16.1.0/include/stdbool.h \
  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/string.h \
  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/strings.h \
@@ -190,6 +191,7 @@ esp-idf/app/CMakeFiles/__idf_app.dir/app.c.obj: \
  /home/piyoosh/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /home/piyoosh/esp/esp-idf/components/esp_partition/include/esp_partition.h \
  /home/piyoosh/esp/esp-idf/components/esp_blockdev/include/esp_blockdev.h \
+ /home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.h \
  /home/piyoosh/esp/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/include/psa/crypto.h \
  /home/piyoosh/esp/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/include/psa/crypto_platform.h \
  /home/piyoosh/esp/esp-idf/components/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/include/mbedtls/private_access.h \

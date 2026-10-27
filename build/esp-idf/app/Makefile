@@ -199,6 +199,30 @@ app.c.s:
 	cd /home/piyoosh/esp/projects/wifi_door_lock/build && $(MAKE) $(MAKESILENT) -f esp-idf/app/CMakeFiles/__idf_app.dir/build.make esp-idf/app/CMakeFiles/__idf_app.dir/app.c.s
 .PHONY : app.c.s
 
+nvs_reset.obj: nvs_reset.c.obj
+.PHONY : nvs_reset.obj
+
+# target to build an object file
+nvs_reset.c.obj:
+	cd /home/piyoosh/esp/projects/wifi_door_lock/build && $(MAKE) $(MAKESILENT) -f esp-idf/app/CMakeFiles/__idf_app.dir/build.make esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj
+.PHONY : nvs_reset.c.obj
+
+nvs_reset.i: nvs_reset.c.i
+.PHONY : nvs_reset.i
+
+# target to preprocess a source file
+nvs_reset.c.i:
+	cd /home/piyoosh/esp/projects/wifi_door_lock/build && $(MAKE) $(MAKESILENT) -f esp-idf/app/CMakeFiles/__idf_app.dir/build.make esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.i
+.PHONY : nvs_reset.c.i
+
+nvs_reset.s: nvs_reset.c.s
+.PHONY : nvs_reset.s
+
+# target to generate assembly for a file
+nvs_reset.c.s:
+	cd /home/piyoosh/esp/projects/wifi_door_lock/build && $(MAKE) $(MAKESILENT) -f esp-idf/app/CMakeFiles/__idf_app.dir/build.make esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.s
+.PHONY : nvs_reset.c.s
+
 setting.obj: setting.c.obj
 .PHONY : setting.obj
 
@@ -263,6 +287,9 @@ help:
 	@echo "... app.obj"
 	@echo "... app.i"
 	@echo "... app.s"
+	@echo "... nvs_reset.obj"
+	@echo "... nvs_reset.i"
+	@echo "... nvs_reset.s"
 	@echo "... setting.obj"
 	@echo "... setting.i"
 	@echo "... setting.s"

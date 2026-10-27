@@ -5089,7 +5089,7 @@ esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/clean:
 esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/all: esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/build.make esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/build.make esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=42 "Built target __idf_esp_stdio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_esp_stdio"
 .PHONY : esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/all
 
 # Build rule for subdir invocation for target.
@@ -5106,7 +5106,7 @@ __idf_esp_stdio: esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/rule
 # codegen rule for target.
 esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/build.make esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=42 "Finished codegen for target __idf_esp_stdio"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_esp_stdio"
 .PHONY : esp-idf/esp_stdio/CMakeFiles/__idf_esp_stdio.dir/codegen
 
 # clean rule for target.
@@ -5126,7 +5126,7 @@ esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/all: esp-idf/esp_hal_cl
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hal_gpspi/CMakeFiles/__idf_esp_hal_gpspi.dir/rule
@@ -5158,7 +5158,7 @@ esp-idf/esp_hal_clock/CMakeFiles/__idf_esp_hal_clock.dir/all: esp-idf/esp_hal_ms
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hal_clock/CMakeFiles/__idf_esp_hal_clock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hal_clock/CMakeFiles/__idf_esp_hal_clock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hal_clock/CMakeFiles/__idf_esp_hal_clock.dir/rule
@@ -5190,7 +5190,7 @@ esp-idf/esp_hal_mspi/CMakeFiles/__idf_esp_hal_mspi.dir/all: esp-idf/esp_hal_secu
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hal_mspi/CMakeFiles/__idf_esp_hal_mspi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hal_mspi/CMakeFiles/__idf_esp_hal_mspi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hal_mspi/CMakeFiles/__idf_esp_hal_mspi.dir/rule
@@ -5217,12 +5217,12 @@ esp-idf/esp_hal_mspi/CMakeFiles/__idf_esp_hal_mspi.dir/clean:
 esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/all: esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/build.make esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/build.make esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=24 "Built target __idf_esp_hal_security"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_esp_hal_security"
 .PHONY : esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 57
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/rule
@@ -5234,7 +5234,7 @@ __idf_esp_hal_security: esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_securi
 # codegen rule for target.
 esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/build.make esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=24 "Finished codegen for target __idf_esp_hal_security"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_esp_hal_security"
 .PHONY : esp-idf/esp_hal_security/CMakeFiles/__idf_esp_hal_security.dir/codegen
 
 # clean rule for target.
@@ -5510,7 +5510,7 @@ esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/all: esp-idf/app_upda
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/rule
@@ -5542,7 +5542,7 @@ esp-idf/app_update/CMakeFiles/__idf_app_update.dir/all: esp-idf/esp_partition/CM
 
 # Build rule for subdir invocation for target.
 esp-idf/app_update/CMakeFiles/__idf_app_update.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/app_update/CMakeFiles/__idf_app_update.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/app_update/CMakeFiles/__idf_app_update.dir/rule
@@ -5574,7 +5574,7 @@ esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/all: esp-idf/efuse/CMak
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/rule
@@ -5606,7 +5606,7 @@ esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all: esp-idf/esp_security/CMakeFiles/__
 
 # Build rule for subdir invocation for target.
 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 55
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 57
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule
@@ -5857,12 +5857,12 @@ esp-idf/efuse/CMakeFiles/efuse_test_table.dir/clean:
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/all: esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/build.make esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/build.make esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_esp_security"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=42 "Built target __idf_esp_security"
 .PHONY : esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/rule
@@ -5874,7 +5874,7 @@ __idf_esp_security: esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/rule
 # codegen rule for target.
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/build.make esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_esp_security"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=42 "Finished codegen for target __idf_esp_security"
 .PHONY : esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/codegen
 
 # clean rule for target.
@@ -5894,7 +5894,7 @@ esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/all: esp-idf/esp_ha
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 55
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/rule
@@ -5926,7 +5926,7 @@ esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/all: esp-idf/esp_pm/CMake
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hal_uart/CMakeFiles/__idf_esp_hal_uart.dir/rule
@@ -5958,7 +5958,7 @@ esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/all: esp-idf/esp_mm/CMakeFiles/__idf_
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/rule
@@ -5990,7 +5990,7 @@ esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/all: esp-idf/esp_driver_dma/CMakeFile
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/rule
@@ -6022,7 +6022,7 @@ esp-idf/esp_driver_dma/CMakeFiles/__idf_esp_driver_dma.dir/all: esp-idf/mbedtls/
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_dma/CMakeFiles/__idf_esp_driver_dma.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_dma/CMakeFiles/__idf_esp_driver_dma.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_dma/CMakeFiles/__idf_esp_driver_dma.dir/rule
@@ -6054,7 +6054,7 @@ esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/all: esp-idf/mbedtls/mbedtls/librar
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 52
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 53
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/rule
@@ -6182,7 +6182,7 @@ esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/everest/CMakeFiles/everest.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/everest/CMakeFiles/everest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 38
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 39
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/everest/CMakeFiles/everest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/everest/CMakeFiles/everest.dir/rule
@@ -6214,7 +6214,7 @@ esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/p256-m/CMakeFiles/p256-m.dir/all: 
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/p256-m/CMakeFiles/p256-m.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 39
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 40
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/p256-m/CMakeFiles/p256-m.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/p256-m/CMakeFiles/p256-m.dir/rule
@@ -6246,7 +6246,7 @@ esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 43
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 44
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/builtin/CMakeFiles/builtin.dir/rule
@@ -6278,7 +6278,7 @@ esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/pqcp/CMakeFiles/pqcp.dir/all: esp-
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/pqcp/CMakeFiles/pqcp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 44
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 45
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/pqcp/CMakeFiles/pqcp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/tf-psa-crypto/drivers/pqcp/CMakeFiles/pqcp.dir/rule
@@ -6310,7 +6310,7 @@ esp-idf/mbedtls/mbedtls/tf-psa-crypto/extras/CMakeFiles/extras.dir/all: esp-idf/
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/tf-psa-crypto/extras/CMakeFiles/extras.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/tf-psa-crypto/extras/CMakeFiles/extras.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/tf-psa-crypto/extras/CMakeFiles/extras.dir/rule
@@ -6342,7 +6342,7 @@ esp-idf/mbedtls/mbedtls/tf-psa-crypto/platform/CMakeFiles/platform.dir/all: esp-
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/tf-psa-crypto/platform/CMakeFiles/platform.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/tf-psa-crypto/platform/CMakeFiles/platform.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/tf-psa-crypto/platform/CMakeFiles/platform.dir/rule
@@ -6374,7 +6374,7 @@ esp-idf/mbedtls/mbedtls/tf-psa-crypto/utilities/CMakeFiles/utilities.dir/all: es
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/tf-psa-crypto/utilities/CMakeFiles/utilities.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 45
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 46
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/tf-psa-crypto/utilities/CMakeFiles/utilities.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/tf-psa-crypto/utilities/CMakeFiles/utilities.dir/rule
@@ -6412,7 +6412,7 @@ esp-idf/mbedtls/mbedtls/tf-psa-crypto/core/CMakeFiles/tfpsacrypto.dir/all: esp-i
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/tf-psa-crypto/core/CMakeFiles/tfpsacrypto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 48
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 49
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/tf-psa-crypto/core/CMakeFiles/tfpsacrypto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/tf-psa-crypto/core/CMakeFiles/tfpsacrypto.dir/rule
@@ -6449,7 +6449,7 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/all: esp-idf/mbedtls/mbe
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 51
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 52
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir/rule
@@ -6481,7 +6481,7 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/all: esp-idf/mbedtls/mbed
 
 # Build rule for subdir invocation for target.
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 50
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 51
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/rule
@@ -6545,7 +6545,7 @@ esp-idf/esp_hal_timg/CMakeFiles/__idf_esp_hal_timg.dir/all: esp-idf/esp_hal_wdt/
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hal_timg/CMakeFiles/__idf_esp_hal_timg.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 38
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hal_timg/CMakeFiles/__idf_esp_hal_timg.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hal_timg/CMakeFiles/__idf_esp_hal_timg.dir/rule
@@ -6577,7 +6577,7 @@ esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/all: esp-idf/esp_hal_i2s/CM
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 37
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 38
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hal_wdt/CMakeFiles/__idf_esp_hal_wdt.dir/rule
@@ -6609,7 +6609,7 @@ esp-idf/esp_hal_i2s/CMakeFiles/__idf_esp_hal_i2s.dir/all: esp-idf/esp_hal_ana_co
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hal_i2s/CMakeFiles/__idf_esp_hal_i2s.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hal_i2s/CMakeFiles/__idf_esp_hal_i2s.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hal_i2s/CMakeFiles/__idf_esp_hal_i2s.dir/rule
@@ -6641,7 +6641,7 @@ esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/all: esp-idf/boot
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 36
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 37
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hal_ana_conv/CMakeFiles/__idf_esp_hal_ana_conv.dir/rule
@@ -6673,7 +6673,7 @@ esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all: esp-idf/
 
 # Build rule for subdir invocation for target.
 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 35
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 36
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/rule
@@ -6705,7 +6705,7 @@ esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all: esp-idf/esp_system/CMakeFi
 
 # Build rule for subdir invocation for target.
 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 33
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule
@@ -6737,7 +6737,7 @@ esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/all: esp-idf/esp_common/CMake
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 32
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule
@@ -6833,7 +6833,7 @@ esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/all: esp-idf/esp_rom/CMakeFil
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 29
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule
@@ -6865,7 +6865,7 @@ esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/all: esp-idf/hal/CMakeFiles/__idf_h
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 29
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule
@@ -6897,7 +6897,7 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/all: esp-idf/log/CMakeFiles/__idf_log.dir/a
 
 # Build rule for subdir invocation for target.
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/hal/CMakeFiles/__idf_hal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/hal/CMakeFiles/__idf_hal.dir/rule
@@ -6924,12 +6924,12 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/clean:
 esp-idf/log/CMakeFiles/__idf_log.dir/all: esp-idf/heap/CMakeFiles/__idf_heap.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=53 "Built target __idf_log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=53,54 "Built target __idf_log"
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/log/CMakeFiles/__idf_log.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/CMakeFiles/__idf_log.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/rule
@@ -6941,7 +6941,7 @@ __idf_log: esp-idf/log/CMakeFiles/__idf_log.dir/rule
 # codegen rule for target.
 esp-idf/log/CMakeFiles/__idf_log.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=53 "Finished codegen for target __idf_log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=53,54 "Finished codegen for target __idf_log"
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/codegen
 
 # clean rule for target.
@@ -7372,7 +7372,7 @@ esp-idf/esp_psram/CMakeFiles/__idf_esp_psram.dir/clean:
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/all: esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/build.make esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/build.make esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_esp_driver_uart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=17 "Built target __idf_esp_driver_uart"
 .PHONY : esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/all
 
 # Build rule for subdir invocation for target.
@@ -7389,7 +7389,7 @@ __idf_esp_driver_uart: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.
 # codegen rule for target.
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/build.make esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_esp_driver_uart"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=17 "Finished codegen for target __idf_esp_driver_uart"
 .PHONY : esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/codegen
 
 # clean rule for target.
@@ -7473,7 +7473,7 @@ esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/all: esp-idf/nvs_
 
 # Build rule for subdir invocation for target.
 esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/rule
@@ -7505,7 +7505,7 @@ esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/all: esp-idf/vfs/CMakeFiles/__i
 
 # Build rule for subdir invocation for target.
 esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/rule
@@ -7569,7 +7569,7 @@ esp-idf/vfs/CMakeFiles/__idf_vfs.dir/all: esp-idf/lwip/CMakeFiles/__idf_lwip.dir
 
 # Build rule for subdir invocation for target.
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/vfs/CMakeFiles/__idf_vfs.dir/rule
@@ -7598,12 +7598,12 @@ esp-idf/lwip/CMakeFiles/__idf_lwip.dir/all: esp-idf/esp_system/CMakeFiles/memory
 esp-idf/lwip/CMakeFiles/__idf_lwip.dir/all: esp-idf/esp_system/CMakeFiles/sections_ld_in_preprocess.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62 "Built target __idf_lwip"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=55,56,57,58,59,60,61,62 "Built target __idf_lwip"
 .PHONY : esp-idf/lwip/CMakeFiles/__idf_lwip.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/lwip/CMakeFiles/__idf_lwip.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/lwip/CMakeFiles/__idf_lwip.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/lwip/CMakeFiles/__idf_lwip.dir/rule
@@ -7615,7 +7615,7 @@ __idf_lwip: esp-idf/lwip/CMakeFiles/__idf_lwip.dir/rule
 # codegen rule for target.
 esp-idf/lwip/CMakeFiles/__idf_lwip.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=54,55,56,57,58,59,60,61,62 "Finished codegen for target __idf_lwip"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=55,56,57,58,59,60,61,62 "Finished codegen for target __idf_lwip"
 .PHONY : esp-idf/lwip/CMakeFiles/__idf_lwip.dir/codegen
 
 # clean rule for target.
@@ -7761,12 +7761,12 @@ esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/clean:
 esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/build.make esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/build.make esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_esp_driver_spi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=16 "Built target __idf_esp_driver_spi"
 .PHONY : esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/rule
@@ -7778,7 +7778,7 @@ __idf_esp_driver_spi: esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir
 # codegen rule for target.
 esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/build.make esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_esp_driver_spi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=16 "Finished codegen for target __idf_esp_driver_spi"
 .PHONY : esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/codegen
 
 # clean rule for target.
@@ -7858,12 +7858,12 @@ esp-idf/cmock/CMakeFiles/__idf_cmock.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xt
 esp-idf/cmock/CMakeFiles/__idf_cmock.dir/all: esp-idf/unity/CMakeFiles/__idf_unity.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/cmock/CMakeFiles/__idf_cmock.dir/build.make esp-idf/cmock/CMakeFiles/__idf_cmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/cmock/CMakeFiles/__idf_cmock.dir/build.make esp-idf/cmock/CMakeFiles/__idf_cmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_cmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=3 "Built target __idf_cmock"
 .PHONY : esp-idf/cmock/CMakeFiles/__idf_cmock.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/cmock/CMakeFiles/__idf_cmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 61
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/cmock/CMakeFiles/__idf_cmock.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/cmock/CMakeFiles/__idf_cmock.dir/rule
@@ -7875,7 +7875,7 @@ __idf_cmock: esp-idf/cmock/CMakeFiles/__idf_cmock.dir/rule
 # codegen rule for target.
 esp-idf/cmock/CMakeFiles/__idf_cmock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/cmock/CMakeFiles/__idf_cmock.dir/build.make esp-idf/cmock/CMakeFiles/__idf_cmock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_cmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=3 "Finished codegen for target __idf_cmock"
 .PHONY : esp-idf/cmock/CMakeFiles/__idf_cmock.dir/codegen
 
 # clean rule for target.
@@ -7890,12 +7890,12 @@ esp-idf/cmock/CMakeFiles/__idf_cmock.dir/clean:
 esp-idf/console/CMakeFiles/__idf_console.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/console/CMakeFiles/__idf_console.dir/build.make esp-idf/console/CMakeFiles/__idf_console.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/console/CMakeFiles/__idf_console.dir/build.make esp-idf/console/CMakeFiles/__idf_console.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=3,4 "Built target __idf_console"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=4 "Built target __idf_console"
 .PHONY : esp-idf/console/CMakeFiles/__idf_console.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/console/CMakeFiles/__idf_console.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/console/CMakeFiles/__idf_console.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/console/CMakeFiles/__idf_console.dir/rule
@@ -7907,7 +7907,7 @@ __idf_console: esp-idf/console/CMakeFiles/__idf_console.dir/rule
 # codegen rule for target.
 esp-idf/console/CMakeFiles/__idf_console.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/console/CMakeFiles/__idf_console.dir/build.make esp-idf/console/CMakeFiles/__idf_console.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=3,4 "Finished codegen for target __idf_console"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=4 "Finished codegen for target __idf_console"
 .PHONY : esp-idf/console/CMakeFiles/__idf_console.dir/codegen
 
 # clean rule for target.
@@ -8182,12 +8182,12 @@ esp-idf/esp_blockdev_util/CMakeFiles/__idf_esp_blockdev_util.dir/clean:
 esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/build.make esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/build.make esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_esp_driver_cam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=10 "Built target __idf_esp_driver_cam"
 .PHONY : esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/rule
@@ -8199,7 +8199,7 @@ __idf_esp_driver_cam: esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir
 # codegen rule for target.
 esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/build.make esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_esp_driver_cam"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=10 "Finished codegen for target __idf_esp_driver_cam"
 .PHONY : esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir/codegen
 
 # clean rule for target.
@@ -8215,12 +8215,12 @@ esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/all: esp-idf/xtensa/C
 esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/all: esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/build.make esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/build.make esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=10 "Built target __idf_esp_driver_dac"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_esp_driver_dac"
 .PHONY : esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 61
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/rule
@@ -8232,7 +8232,7 @@ __idf_esp_driver_dac: esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir
 # codegen rule for target.
 esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/build.make esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=10 "Finished codegen for target __idf_esp_driver_dac"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_esp_driver_dac"
 .PHONY : esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/codegen
 
 # clean rule for target.
@@ -8540,12 +8540,12 @@ esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/clean:
 esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/build.make esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/build.make esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_esp_hal_sd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=24 "Built target __idf_esp_hal_sd"
 .PHONY : esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/rule
@@ -8557,7 +8557,7 @@ __idf_esp_hal_sd: esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/rule
 # codegen rule for target.
 esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/build.make esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_esp_hal_sd"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=24 "Finished codegen for target __idf_esp_hal_sd"
 .PHONY : esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/codegen
 
 # clean rule for target.
@@ -8573,7 +8573,7 @@ esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xt
 esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/all: esp-idf/esp_hal_sd/CMakeFiles/__idf_esp_hal_sd.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/build.make esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/build.make esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=68 "Built target __idf_sdmmc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_sdmmc"
 .PHONY : esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -8590,7 +8590,7 @@ __idf_sdmmc: esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/rule
 # codegen rule for target.
 esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/build.make esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=68 "Finished codegen for target __idf_sdmmc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_sdmmc"
 .PHONY : esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/codegen
 
 # clean rule for target.
@@ -8645,7 +8645,7 @@ esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/all: esp-idf/esp_ha
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/rule
@@ -8747,7 +8747,7 @@ esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/all: esp-idf/sdmm
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 61
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/rule
@@ -8774,12 +8774,12 @@ esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/clean:
 esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=16 "Built target __idf_esp_driver_touch_sens"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_esp_driver_touch_sens"
 .PHONY : esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 60
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 59
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/rule
@@ -8791,7 +8791,7 @@ __idf_esp_driver_touch_sens: esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_
 # codegen rule for target.
 esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/build.make esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=16 "Finished codegen for target __idf_esp_driver_touch_sens"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_esp_driver_touch_sens"
 .PHONY : esp-idf/esp_driver_touch_sens/CMakeFiles/__idf_esp_driver_touch_sens.dir/codegen
 
 # clean rule for target.
@@ -8875,7 +8875,7 @@ esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/all: esp-idf/esp_driver_spi/CMakeFi
 esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/all: esp-idf/esp_hal_emac/CMakeFiles/__idf_esp_hal_emac.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=17 "Built target __idf_esp_eth"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_esp_eth"
 .PHONY : esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/all
 
 # Build rule for subdir invocation for target.
@@ -8892,7 +8892,7 @@ __idf_esp_eth: esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/rule
 # codegen rule for target.
 esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/build.make esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=17 "Finished codegen for target __idf_esp_eth"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_esp_eth"
 .PHONY : esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/codegen
 
 # clean rule for target.
@@ -8948,7 +8948,7 @@ esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/all: esp-idf/esp_driver_spi/CMakeFi
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 72
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 73
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/rule
@@ -9162,7 +9162,7 @@ esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/all: esp-idf/esp_hal_lcd/CMakeFiles
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 63
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/rule
@@ -9348,7 +9348,7 @@ esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/all: esp-idf/wear_levelling/CMakeFiles/
 
 # Build rule for subdir invocation for target.
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/rule
@@ -9407,12 +9407,12 @@ esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/clean:
 esp-idf/rt/CMakeFiles/__idf_rt.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/rt/CMakeFiles/__idf_rt.dir/build.make esp-idf/rt/CMakeFiles/__idf_rt.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/rt/CMakeFiles/__idf_rt.dir/build.make esp-idf/rt/CMakeFiles/__idf_rt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Built target __idf_rt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=68 "Built target __idf_rt"
 .PHONY : esp-idf/rt/CMakeFiles/__idf_rt.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/rt/CMakeFiles/__idf_rt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 59
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 60
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/rt/CMakeFiles/__idf_rt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles 0
 .PHONY : esp-idf/rt/CMakeFiles/__idf_rt.dir/rule
@@ -9424,7 +9424,7 @@ __idf_rt: esp-idf/rt/CMakeFiles/__idf_rt.dir/rule
 # codegen rule for target.
 esp-idf/rt/CMakeFiles/__idf_rt.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/rt/CMakeFiles/__idf_rt.dir/build.make esp-idf/rt/CMakeFiles/__idf_rt.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num= "Finished codegen for target __idf_rt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=68 "Finished codegen for target __idf_rt"
 .PHONY : esp-idf/rt/CMakeFiles/__idf_rt.dir/codegen
 
 # clean rule for target.

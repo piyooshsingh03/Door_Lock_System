@@ -8,5 +8,5 @@ C_INCLUDES = -I/home/piyoosh/esp/projects/wifi_door_lock/build/config -I/home/pi
 
 C_FLAGS = @"/home/piyoosh/esp/projects/wifi_door_lock/build/toolchain/cflags" -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-error=extra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -Wunused-but-set-variable=1 -fmacro-prefix-map=/home/piyoosh/esp/projects/wifi_door_lock=. -fmacro-prefix-map=/home/piyoosh/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-lto -fno-jump-tables -fno-tree-switch-conversion -std=gnu23 -Wno-old-style-declaration -fzero-init-padding-bits=all -fno-malloc-dce
 
-# Custom defines: esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj_DEFINES = PROJECT_VER="1"; PROJECT_NAME="wifi_door_lock"
+# Custom defines: esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj_DEFINES = PROJECT_VER="893b061-dirty"; PROJECT_NAME="wifi_door_lock"
 

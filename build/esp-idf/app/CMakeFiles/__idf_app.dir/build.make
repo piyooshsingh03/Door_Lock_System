@@ -114,11 +114,26 @@ esp-idf/app/CMakeFiles/__idf_app.dir/sos.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_app.dir/sos.c.s"
 	cd /home/piyoosh/esp/projects/wifi_door_lock/build/esp-idf/app && /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/piyoosh/esp/projects/wifi_door_lock/components/app/sos.c -o CMakeFiles/__idf_app.dir/sos.c.s
 
+esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj: esp-idf/app/CMakeFiles/__idf_app.dir/flags.make
+esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj: /home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.c
+esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj: esp-idf/app/CMakeFiles/__idf_app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj"
+	cd /home/piyoosh/esp/projects/wifi_door_lock/build/esp-idf/app && esp-idf-configdep /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj -MF CMakeFiles/__idf_app.dir/nvs_reset.c.obj.d -o CMakeFiles/__idf_app.dir/nvs_reset.c.obj -c /home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.c
+
+esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_app.dir/nvs_reset.c.i"
+	cd /home/piyoosh/esp/projects/wifi_door_lock/build/esp-idf/app && /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.c > CMakeFiles/__idf_app.dir/nvs_reset.c.i
+
+esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_app.dir/nvs_reset.c.s"
+	cd /home/piyoosh/esp/projects/wifi_door_lock/build/esp-idf/app && /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.c -o CMakeFiles/__idf_app.dir/nvs_reset.c.s
+
 # Object files for target __idf_app
 __idf_app_OBJECTS = \
 "CMakeFiles/__idf_app.dir/app.c.obj" \
 "CMakeFiles/__idf_app.dir/setting.c.obj" \
-"CMakeFiles/__idf_app.dir/sos.c.obj"
+"CMakeFiles/__idf_app.dir/sos.c.obj" \
+"CMakeFiles/__idf_app.dir/nvs_reset.c.obj"
 
 # External object files for target __idf_app
 __idf_app_EXTERNAL_OBJECTS =
@@ -126,9 +141,10 @@ __idf_app_EXTERNAL_OBJECTS =
 esp-idf/app/libapp.a: esp-idf/app/CMakeFiles/__idf_app.dir/app.c.obj
 esp-idf/app/libapp.a: esp-idf/app/CMakeFiles/__idf_app.dir/setting.c.obj
 esp-idf/app/libapp.a: esp-idf/app/CMakeFiles/__idf_app.dir/sos.c.obj
+esp-idf/app/libapp.a: esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj
 esp-idf/app/libapp.a: esp-idf/app/CMakeFiles/__idf_app.dir/build.make
 esp-idf/app/libapp.a: esp-idf/app/CMakeFiles/__idf_app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C static library libapp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/piyoosh/esp/projects/wifi_door_lock/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C static library libapp.a"
 	cd /home/piyoosh/esp/projects/wifi_door_lock/build/esp-idf/app && $(CMAKE_COMMAND) -P CMakeFiles/__idf_app.dir/cmake_clean_target.cmake
 	cd /home/piyoosh/esp/projects/wifi_door_lock/build/esp-idf/app && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/__idf_app.dir/link.txt --verbose=$(VERBOSE)
 

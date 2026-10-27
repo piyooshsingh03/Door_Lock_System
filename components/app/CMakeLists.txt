@@ -4,6 +4,7 @@ idf_component_register(
         "app.c"
         "setting.c"
         "sos.c"
+        "nvs_reset.c"
     INCLUDE_DIRS
         "include"
     REQUIRES

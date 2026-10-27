@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/piyoosh/esp/projects/wifi_door_lock/components/app/app.c" "esp-idf/app/CMakeFiles/__idf_app.dir/app.c.obj" "gcc" "esp-idf/app/CMakeFiles/__idf_app.dir/app.c.obj.d"
+  "/home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.c" "esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj" "gcc" "esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj.d"
   "/home/piyoosh/esp/projects/wifi_door_lock/components/app/setting.c" "esp-idf/app/CMakeFiles/__idf_app.dir/setting.c.obj" "gcc" "esp-idf/app/CMakeFiles/__idf_app.dir/setting.c.obj.d"
   "/home/piyoosh/esp/projects/wifi_door_lock/components/app/sos.c" "esp-idf/app/CMakeFiles/__idf_app.dir/sos.c.obj" "gcc" "esp-idf/app/CMakeFiles/__idf_app.dir/sos.c.obj.d"
   )

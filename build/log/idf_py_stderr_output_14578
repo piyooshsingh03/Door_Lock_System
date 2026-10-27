@@ -1,0 +1,105 @@
+Command: make -j 10 all
+NOTE: /home/piyoosh/esp/esp-idf/components/bt/host/nimble/Kconfig.in:1461: BT_NIMBLE_MESH_PROVISIONER: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: /home/piyoosh/esp/esp-idf/components/bt/controller/esp32/Kconfig.in:177: BTDM_CTRL_LEGACY_AUTH_VENDOR_EVT_EFF: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: /home/piyoosh/esp/esp-idf/components/fatfs/Kconfig:240: FATFS_PRINT_LLI: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: /home/piyoosh/esp/esp-idf/components/fatfs/Kconfig:245: FATFS_PRINT_FLOAT: 'default 0' is not a valid bool value (only 'y' and 'n' are allowed). Value is treated as 'n'.
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished successfully
+CMake Warning at /home/piyoosh/esp/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  '/home/piyoosh/esp/esp-idf/components/esp_wifi/wifi_apps/roaming_app/include'
+  belongs to component esp_wifi but is being used by component
+  wpa_supplicant.  It is recommended to define the component dependency for
+  wpa_supplicant on the component esp_wifi, i.e.  'idf_component_register(...
+  PRIV_REQUIRES esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and
+  specify the included directory as idf_component_register(...
+  PRIV_INCLUDE_DIRS <dir relative to component>) in the CMakeLists.txt of
+  component esp_wifi.
+Call Stack (most recent call first):
+  /home/piyoosh/esp/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  /home/piyoosh/esp/esp-idf/CMakeLists.txt:428 (__component_validation_run_checks)
+
+
+CMake Warning at /home/piyoosh/esp/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  '/home/piyoosh/esp/esp-idf/components/esp_wifi/wifi_apps/roaming_app/src'
+  belongs to component esp_wifi but is being used by component
+  wpa_supplicant.  It is recommended to define the component dependency for
+  wpa_supplicant on the component esp_wifi, i.e.  'idf_component_register(...
+  PRIV_REQUIRES esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and
+  specify the included directory as idf_component_register(...
+  PRIV_INCLUDE_DIRS <dir relative to component>) in the CMakeLists.txt of
+  component esp_wifi.
+Call Stack (most recent call first):
+  /home/piyoosh/esp/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  /home/piyoosh/esp/esp-idf/CMakeLists.txt:428 (__component_validation_run_checks)
+
+
+CMake Warning at /home/piyoosh/esp/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  '/home/piyoosh/esp/esp-idf/components/esp_wifi/wifi_apps/include/apps_private'
+  belongs to component esp_wifi but is being used by component
+  wpa_supplicant.  It is recommended to define the component dependency for
+  wpa_supplicant on the component esp_wifi, i.e.  'idf_component_register(...
+  PRIV_REQUIRES esp_wifi)' in the CMakeLists.txt of wpa_supplicant, and
+  specify the included directory as idf_component_register(...
+  PRIV_INCLUDE_DIRS <dir relative to component>) in the CMakeLists.txt of
+  component esp_wifi.
+Call Stack (most recent call first):
+  /home/piyoosh/esp/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  /home/piyoosh/esp/esp-idf/CMakeLists.txt:428 (__component_validation_run_checks)
+
+
+CMake Warning at /home/piyoosh/esp/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  '/home/piyoosh/esp/esp-idf/components/wpa_supplicant/src' belongs to
+  component wpa_supplicant but is being used by component esp_wifi.  It is
+  recommended to define the component dependency for esp_wifi on the
+  component wpa_supplicant, i.e.  'idf_component_register(...  PRIV_REQUIRES
+  wpa_supplicant)' in the CMakeLists.txt of esp_wifi, and specify the
+  included directory as idf_component_register(...  PRIV_INCLUDE_DIRS <dir
+  relative to component>) in the CMakeLists.txt of component wpa_supplicant.
+Call Stack (most recent call first):
+  /home/piyoosh/esp/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  /home/piyoosh/esp/esp-idf/CMakeLists.txt:428 (__component_validation_run_checks)
+
+
+CMake Warning at /home/piyoosh/esp/esp-idf/tools/cmake/component_validation.cmake:106 (message):
+  Private include directory
+  '/home/piyoosh/esp/esp-idf/components/wpa_supplicant/esp_supplicant/src'
+  belongs to component wpa_supplicant but is being used by component
+  esp_wifi.  It is recommended to define the component dependency for
+  esp_wifi on the component wpa_supplicant, i.e.  'idf_component_register(...
+  PRIV_REQUIRES wpa_supplicant)' in the CMakeLists.txt of esp_wifi, and
+  specify the included directory as idf_component_register(...
+  PRIV_INCLUDE_DIRS <dir relative to component>) in the CMakeLists.txt of
+  component wpa_supplicant.
+Call Stack (most recent call first):
+  /home/piyoosh/esp/esp-idf/tools/cmake/component_validation.cmake:130 (__component_validation_check_include_dirs)
+  /home/piyoosh/esp/esp-idf/CMakeLists.txt:428 (__component_validation_run_checks)
+
+
+In file included from /home/piyoosh/esp/projects/wifi_door_lock/components/app/app.c:9:
+/home/piyoosh/esp/esp-idf/components/log/include/esp_log.h:125:36: error: expected identifier or '(' before 'do'
+  125 | #define ESP_LOGW(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN, tag, format, ##__VA_ARGS__); } while(0)
+      |                                    ^~
+/home/piyoosh/esp/projects/wifi_door_lock/components/app/app.c:489:5: note: in expansion of macro 'ESP_LOGW'
+  489 |     ESP_LOGW(TAG, "One-time NVS erase enabled");
+      |     ^~~~~~~~
+/home/piyoosh/esp/esp-idf/components/log/include/esp_log.h:125:106: error: expected identifier or '(' before 'while'
+  125 | #define ESP_LOGW(tag, format, ...) do { ESP_LOG_LEVEL_LOCAL(ESP_LOG_WARN, tag, format, ##__VA_ARGS__); } while(0)
+      |                                                                                                          ^~~~~
+/home/piyoosh/esp/projects/wifi_door_lock/components/app/app.c:489:5: note: in expansion of macro 'ESP_LOGW'
+  489 |     ESP_LOGW(TAG, "One-time NVS erase enabled");
+      |     ^~~~~~~~
+/home/piyoosh/esp/projects/wifi_door_lock/components/app/app.c:491:27: error: initializer element is not constant
+  491 |     esp_err_t reset_err = erase_nvs_storage();
+      |                           ^~~~~~~~~~~~~~~~~
+/home/piyoosh/esp/projects/wifi_door_lock/components/app/app.c:492:5: error: expected identifier or '(' before 'if'
+  492 |     if (reset_err != ESP_OK) {
+      |     ^~
+configdep.c:684: in main: exec_process exited with error code: 1
+make[2]: *** [esp-idf/app/CMakeFiles/__idf_app.dir/build.make:79: esp-idf/app/CMakeFiles/__idf_app.dir/app.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:9579: esp-idf/app/CMakeFiles/__idf_app.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

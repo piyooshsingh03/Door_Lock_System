@@ -1,5 +1,6 @@
 #include "setting.h"
 #include "auth_api.h"
+#include "sos.h"
 #include <stdio.h>
 #include <stdint.h>
 #include <stdbool.h>
@@ -13,6 +14,7 @@
 
 #include "nvs.h"
 #include "nvs_flash.h"
+#include "nvs_reset.h"
 
 #include "psa/crypto.h"
 
@@ -389,12 +391,14 @@ static esp_err_t gpio_handler(httpd_req_t *req)
     if (httpd_req_get_hdr_value_str(
             req, "X-Device-Token", token, sizeof(token)) != ESP_OK) {
         ESP_LOGW(TAG, "GPIO request rejected: missing token");
+        (void)sos_trigger();
         return send_error(req, "401 Unauthorized",
                           "Device credential required");
     }
 
     if (!token_matches(token)) {
         ESP_LOGW(TAG, "GPIO request rejected: invalid token");
+         (void)sos_trigger();
         return send_error(req, "401 Unauthorized",
                           "Invalid device credential");
     }
@@ -480,9 +484,20 @@ static esp_err_t web_server_start(void)
 
 /* ---------------- Application entry point ---------------- */
 
-
 esp_err_t app_start(void)
 {
+
+#define ERASE_NVS_ON_BOOT 1
+
+#if ERASE_NVS_ON_BOOT
+    ESP_LOGW(TAG, "One-time NVS erase enabled");
+
+    esp_err_t reset_err = erase_nvs_storage();
+    if (reset_err != ESP_OK) {
+        ESP_LOGE(TAG, "NVS reset failed");
+        return reset_err;
+    }
+#endif
     ESP_LOGI(TAG, "Starting Wi-Fi door lock application");
 
     gpio_config_t gpio_config_data = {
@@ -500,6 +515,13 @@ esp_err_t app_start(void)
                  esp_err_to_name(err));
         return err;
     }
+/*
+err = sos_init();
+if (err != ESP_OK) {
+    ESP_LOGE(TAG, "SOS initialization failed: %s",
+             esp_err_to_name(err));
+    return err;
+}*/
 
     gpio_set_level(DOOR_GPIO, 0);
 

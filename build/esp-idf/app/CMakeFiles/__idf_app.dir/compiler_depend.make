@@ -661,7 +661,113 @@ esp-idf/app/CMakeFiles/__idf_app.dir/app.c.obj: /home/piyoosh/esp/projects/wifi_
   /home/piyoosh/esp/projects/wifi_door_lock/components/app/include/app.h \
   /home/piyoosh/esp/projects/wifi_door_lock/components/app/include/auth_api.h \
   /home/piyoosh/esp/projects/wifi_door_lock/components/app/include/setting.h \
+  /home/piyoosh/esp/projects/wifi_door_lock/components/app/include/sos.h \
+  /home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.h \
   /home/piyoosh/esp/projects/wifi_door_lock/components/wifi_manager/include/wifi_manager.h
+
+esp-idf/app/CMakeFiles/__idf_app.dir/nvs_reset.c.obj: /home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.c \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/16.1.0/include/stdarg.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/16.1.0/include/stdbool.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/16.1.0/include/stddef.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/alloca.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/assert.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/inttypes.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/machine/_default_types.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/machine/_types.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/machine/ieeefp.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/machine/stdlib.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/picolibc.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/stdint.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/stdio.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/stdlib.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/string.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/strings.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/_intsup.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/_locale.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/_stdint.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/_types.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/_wait.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/cdefs.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/config.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/features.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/lock.h \
+  /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/picolibc/include/sys/string.h \
+  /home/piyoosh/esp/esp-idf/components/esp_blockdev/include/esp_blockdev.h \
+  /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_assert.h \
+  /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_attr.h \
+  /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_bit_defs.h \
+  /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_compiler.h \
+  /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_err.h \
+  /home/piyoosh/esp/esp-idf/components/esp_common/include/esp_macros.h \
+  /home/piyoosh/esp/esp-idf/components/esp_libc/platform_include/assert.h \
+  /home/piyoosh/esp/esp-idf/components/esp_libc/platform_include/stdio.h \
+  /home/piyoosh/esp/esp-idf/components/esp_libc/platform_include/sys/cdefs.h \
+  /home/piyoosh/esp/esp-idf/components/esp_libc/platform_include/sys/lock.h \
+  /home/piyoosh/esp/esp-idf/components/esp_partition/include/esp_partition.h \
+  /home/piyoosh/esp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_log.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_log_args.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_log_attr.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_log_buffer.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_log_color.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_log_config.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_log_format.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_log_level.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_log_timestamp.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_log_write.h \
+  /home/piyoosh/esp/esp-idf/components/log/include/esp_private/log_attr.h \
+  /home/piyoosh/esp/esp-idf/components/nvs_flash/include/nvs.h \
+  /home/piyoosh/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
+  /home/piyoosh/esp/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+  /home/piyoosh/esp/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+  /home/piyoosh/esp/esp-idf/components/soc/include/soc/soc_caps_eval.h \
+  config/bootloader/log/colors.cdep \
+  config/bootloader/log/colors/support.cdep \
+  config/bootloader/log/level.cdep \
+  config/bootloader/log/mode/binary/en.cdep \
+  config/bootloader/log/mode/text/en.cdep \
+  config/bootloader/log/timestamp/source/none.cdep \
+  config/bootloader/log/timestamp/support.cdep \
+  config/bootloader/log/version.cdep \
+  config/cache/l1/cache/line/size.cdep \
+  config/compiler/assert/ndebug/evaluate.cdep \
+  config/compiler/optimization/assertions/silent.cdep \
+  config/compiler/optimization/perf.cdep \
+  config/compiler/static/analyzer.cdep \
+  config/esp/rom/has/vprintf/func.cdep \
+  config/esp32/iram/as/8bit/accessible/memory.cdep \
+  config/esp32/rev/min/full.cdep \
+  config/freertos/use/list/data/integrity/check/bytes.cdep \
+  config/freertos/use/trace/facility.cdep \
+  config/idf/ci/build.cdep \
+  config/idf/target/esp32.cdep \
+  config/idf/target/linux.cdep \
+  config/libc/picolibc.cdep \
+  config/libc/picolibc/newlib/compatibility.cdep \
+  config/log/api/constrained/env/safe.cdep \
+  config/log/colors.cdep \
+  config/log/colors/support.cdep \
+  config/log/default/level.cdep \
+  config/log/dynamic/level/control.cdep \
+  config/log/master/level.cdep \
+  config/log/maximum/level.cdep \
+  config/log/mode/binary/en.cdep \
+  config/log/mode/text/en.cdep \
+  config/log/tag/level/impl.cdep \
+  config/log/tag/level/impl/none.cdep \
+  config/log/timestamp/source/.cdep \
+  config/log/timestamp/source/none.cdep \
+  config/log/timestamp/source/rtos.cdep \
+  config/log/timestamp/source/system.cdep \
+  config/log/timestamp/support.cdep \
+  config/log/version.cdep \
+  config/secure/tee/log/level.cdep \
+  config/soc/cache/internal/mem/via/l1cache.cdep \
+  config/soc/rtc/fast/mem/supported.cdep \
+  config/soc/rtc/slow/mem/supported.cdep \
+  config/spiram/allow/bss/seg/external/memory.cdep \
+  config/spiram/allow/noinit/seg/external/memory.cdep \
+  /home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.h
 
 esp-idf/app/CMakeFiles/__idf_app.dir/setting.c.obj: /home/piyoosh/esp/projects/wifi_door_lock/components/app/setting.c \
   /home/piyoosh/.espressif/tools/xtensa-esp-elf/esp-16.1.0_20260609/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/16.1.0/include/limits.h \
@@ -1229,8 +1335,6 @@ esp-idf/app/CMakeFiles/__idf_app.dir/sos.c.obj: /home/piyoosh/esp/projects/wifi_
   /home/piyoosh/esp/projects/wifi_door_lock/components/app/include/sos.h
 
 
-/home/piyoosh/esp/projects/wifi_door_lock/components/app/include/sos.h:
-
 config/esp/timer/supports/isr/dispatch/method.cdep:
 
 config/esp/timer/isr/affinity.cdep:
@@ -1239,7 +1343,13 @@ config/esp/timer/isr/affinity.cdep:
 
 /home/piyoosh/esp/projects/wifi_door_lock/managed_components/espressif__cjson/cJSON/cJSON.h:
 
+/home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.c:
+
 /home/piyoosh/esp/projects/wifi_door_lock/components/wifi_manager/include/wifi_manager.h:
+
+/home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.h:
+
+/home/piyoosh/esp/projects/wifi_door_lock/components/app/include/sos.h:
 
 /home/piyoosh/esp/projects/wifi_door_lock/components/app/include/setting.h:
 

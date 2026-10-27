@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "wifi_door_lock",
-    "project_version":    "1",
+    "project_version":    "893b061-dirty",
     "project_path":       "/home/piyoosh/esp/projects/wifi_door_lock",
     "idf_path":           "/home/piyoosh/esp/esp-idf",
     "build_dir":          "/home/piyoosh/esp/projects/wifi_door_lock/build",
@@ -40,7 +40,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/piyoosh/esp/projects/wifi_door_lock/build/esp-idf/app/libapp.a",
-            "sources": [ "/home/piyoosh/esp/projects/wifi_door_lock/components/app/app.c", "/home/piyoosh/esp/projects/wifi_door_lock/components/app/setting.c", "/home/piyoosh/esp/projects/wifi_door_lock/components/app/sos.c" ],
+            "sources": [ "/home/piyoosh/esp/projects/wifi_door_lock/components/app/app.c", "/home/piyoosh/esp/projects/wifi_door_lock/components/app/setting.c", "/home/piyoosh/esp/projects/wifi_door_lock/components/app/sos.c", "/home/piyoosh/esp/projects/wifi_door_lock/components/app/nvs_reset.c" ],
             "include_dirs": [ "include" ]
         },
         "app_trace": {
